@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Eq/+rcYG7PPsaZDoxOi5RIhctauR6gPhhTp7gPyoJhw=",
+  "Source": "Wms.Integration.API",
+  "BasePath": "_content/Wms.Integration.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

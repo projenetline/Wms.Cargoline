@@ -80,6 +80,27 @@ namespace Wms.Integration.Business.Concrete
             }
         }
 
+        public async Task<IDataResult<ItemUnit>> GetItemIdAsync(int itemId)
+        {
+            try
+            {
+                return new SuccessDataResult<ItemUnit>(await itemUnitDal.GetAsync(s => s.ItemId == itemId), CustomJObject.Instance.General.Get);
+            }
+            catch (Exception ex)
+            {
+                await loggerDal.CreateAsync(new Logger
+                {
+                    CreatedDate = DateTime.Now,
+                    Message1 = ex.Message,
+                    Message2 = ex.InnerException == null ? "" : ex.InnerException.Message,
+                    MethodName = "ItemUnitManager.GetItemIdAsync",
+                    ProjectName = "Wms.Integration.Business",
+                    Statu = "Error",
+                });
+                return new ErrorDataResult<ItemUnit>(null, CustomJObject.Instance.General.NotGet);
+            }
+        }
+
         public async Task<IDataResult<ItemUnit>> UpdateAsync(ItemUnit entity)
         {
             try

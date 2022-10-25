@@ -1,9 +1,6 @@
 ﻿using Wms.Integration.Business.Abstract;
-using Wms.Integration.Core.Core.Abstract;
 using Wms.Integration.Core.DataAccess.Utilities.Results;
-using Wms.Integration.Core.Entities.Abstract;
 using Wms.Integration.DataAccess.Abstract;
-using Wms.Integration.DataAccess.Concrete;
 using Wms.Integration.Entities.Concrete;
 using Wms.Integration.Entities.JsonObjects;
 
@@ -74,6 +71,27 @@ namespace Wms.Integration.Business.Concrete
                     Message1 = ex.Message,
                     Message2 = ex.InnerException == null ? "" : ex.InnerException.Message,
                     MethodName = "SysFactoryManager.GetAsync",
+                    ProjectName = "Wms.Integration.Business",
+                    Statu = "Error",
+                });
+                return new ErrorDataResult<SysFactory>(null, CustomJObject.Instance.General.NotGet);
+            }
+        }
+
+        public async Task<IDataResult<SysFactory>> GetCodeAsync(string Code)
+        {
+            try
+            {
+                return new SuccessDataResult<SysFactory>(await sysFactoryDal.GetAsync(s => s.Code == Code), CustomJObject.Instance.General.Get);
+            }
+            catch (Exception ex)
+            {
+                await loggerDal.CreateAsync(new Logger
+                {
+                    CreatedDate = DateTime.Now,
+                    Message1 = ex.Message,
+                    Message2 = ex.InnerException == null ? "" : ex.InnerException.Message,
+                    MethodName = "SysFactoryManager.GetCodeAsync",
                     ProjectName = "Wms.Integration.Business",
                     Statu = "Error",
                 });

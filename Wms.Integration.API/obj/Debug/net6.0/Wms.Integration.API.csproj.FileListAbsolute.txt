@@ -551,3 +551,13 @@ C:\Netline\Wms.General\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.
 C:\Netline\Wms.General\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.genruntimeconfig.cache
 C:\Netline\Wms.General\Wms.Integration.API\obj\Debug\net6.0\ref\Wms.Integration.API.dll
 C:\Netline\Wms.General\Wms.Integration.API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.csproj.AssemblyReference.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.AssemblyInfoInputs.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.AssemblyInfo.cs
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.csproj.CoreCompileInputs.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\refint\Wms.Integration.API.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.API\obj\Debug\net6.0\Wms.Integration.API.pdb

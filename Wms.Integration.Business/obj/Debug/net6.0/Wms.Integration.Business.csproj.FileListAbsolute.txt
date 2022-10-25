@@ -36,3 +36,11 @@ C:\Netline\Wms.General\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration
 C:\Netline\Wms.General\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Entities.pdb
 C:\Netline\Wms.General\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.csproj.CopyComplete
 C:\Netline\Wms.General\Wms.Integration.Business\obj\Debug\net6.0\ref\Wms.Integration.Business.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.csproj.AssemblyReference.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.AssemblyInfoInputs.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.AssemblyInfo.cs
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.csproj.CoreCompileInputs.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\refint\Wms.Integration.Business.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.pdb

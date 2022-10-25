@@ -26,3 +26,17 @@ C:\Netline\Wms.General\Wms.Integration.Core\obj\Debug\net6.0\refint\Wms.Integrat
 C:\Netline\Wms.General\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.pdb
 C:\Netline\Wms.General\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.genruntimeconfig.cache
 C:\Netline\Wms.General\Wms.Integration.Core\obj\Debug\net6.0\ref\Wms.Integration.Core.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.deps.json
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.runtimeconfig.json
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.csproj.AssemblyReference.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.AssemblyInfoInputs.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.AssemblyInfo.cs
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.csproj.CoreCompileInputs.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\refint\Wms.Integration.Core.dll
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.genruntimeconfig.cache
+C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\ref\Wms.Integration.Core.dll

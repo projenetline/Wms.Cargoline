@@ -22,7 +22,6 @@ namespace Wms.Integration.Core.DataAccess.Utilities.Security.Jwt
                 AccessTokenExpression = int.Parse(configuration.GetSection("TokenOptions:AccessTokenExpression").Value),
                 SecurityKey = configuration.GetSection("TokenOptions:SecurityKey").Value,
             };
-
             _accessTokenExpiration = DateTime.Now.AddMinutes(tokenOptions.AccessTokenExpression);
         }
         public AccessToken CreateToken(User user, List<OperationClaim> operationClaims)

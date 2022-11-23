@@ -5,13 +5,14 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Wms.Integration.WebUI
 build_property.RootNamespace = Wms.Integration.WebUI
 build_property.ProjectDir = C:\Netline\Wms.Cargoline\Wms.Integration.WebUI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Netline\Wms.Cargoline\Wms.Integration.WebUI
 build_property._RazorSourceGeneratorDebug = 
 
@@ -39,6 +40,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/StartShipping/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRTaGlwcGluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/TagEdit/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnRWRpdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/TagList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnTGlzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +59,18 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/Components/SevkGrid/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2V2a0dyaWRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-pxqfswphvt
+
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/Components/TagEditGrid/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnRWRpdEdyaWRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-mibgmv6s6l
+
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/Components/TagListGrid/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnTGlzdEdyaWRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-tdkmnlwo87
 
 [C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

@@ -9,6 +9,7 @@ using Wms.Integration.DataAccess.Concrete.Contexts;
 using Wms.Integration.Entities.Concrete;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.WebHost.UseKestrel().UseIIS().UseIISIntegration();
 //builder.WebHost.UseDefaultServiceProvider(options =>
 //            options.ValidateScopes = true);
 

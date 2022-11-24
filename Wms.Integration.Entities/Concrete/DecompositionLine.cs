@@ -14,7 +14,7 @@ namespace Wms.Integration.Entities.Concrete
         public int Amount { get; set; }
         public int SlipLineId { get; set; }
         public Guid DecompositionShelvesId { get; set; }
-        public virtual OrderSlipLine SlipLine { get; set; }
+        public virtual Slip SlipLine { get; set; }
         public virtual DecompositionShelves DecompositionShelves { get; set; }
     }
 }

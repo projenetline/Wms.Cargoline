@@ -56,9 +56,9 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2V2a0dyaWRcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-pxqfswphvt
 
-[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/Components/TagEditGrid/Default.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnRWRpdEdyaWRcRGVmYXVsdC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = b-mibgmv6s6l
+[C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/Components/ShippingListGrid/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU2hpcHBpbmdMaXN0R3JpZFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-92i0000xzx
 
 [C:/Netline/Wms.Cargoline/Wms.Integration.WebUI/Views/Shared/Components/TagListGrid/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnTGlzdEdyaWRcRGVmYXVsdC5jc2h0bWw=

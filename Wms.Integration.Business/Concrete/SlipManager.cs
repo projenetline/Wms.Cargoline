@@ -5,6 +5,7 @@ using Wms.Integration.Core.Entities.Abstract;
 using Wms.Integration.DataAccess.Abstract;
 using Wms.Integration.DataAccess.Concrete;
 using Wms.Integration.Entities.Concrete;
+using Wms.Integration.Entities.Dtos.Slip;
 using Wms.Integration.Entities.JsonObjects;
 
 namespace Wms.Integration.Business.Concrete
@@ -18,6 +19,52 @@ namespace Wms.Integration.Business.Concrete
             this.slipDal = slipDal;
             this.loggerDal = loggerDal;
         }
+        public async Task<IDataResult<IList<Slip>>> GetListAsync(ListSlipDto dto)
+        {
+            try
+            {
+                return new SuccessDataResult<IList<Slip>>(await slipDal.GetListAsync(s=>s.StateId==dto.StateId,s=>s.Id,false,s=>s.OrderSlip,s=>s.Arp), CustomJObject.Instance.General.Get);
+            }
+            catch (Exception ex)
+            {
+                await loggerDal.CreateAsync(new Logger
+                {
+                    CreatedDate = DateTime.Now,
+                    Message1 = ex.Message,
+                    Message2 = ex.InnerException == null ? "" : ex.InnerException.Message,
+                    MethodName = "SlipManager.GetListAsync",
+                    ProjectName = "Wms.Integration.Business",
+                    Statu = "Error",
+                });
+                return new ErrorDataResult<IList<Slip>>(null, CustomJObject.Instance.General.Get);
+            }
+        }
+     
+        public async Task<IDataResult<PagedResult<Slip>>> GetPagedListAsync(ListSlipDto dto)
+        {
+            try
+            {
+                return new SuccessDataResult<PagedResult<Slip>>(new PagedResult<Slip>
+                {
+                    Items = await slipDal.GetPagedListAsync(dto.SkipCount, dto.MaxResultCount, s => s.StateId == dto.StateId, s => s.Id, false, s => s.OrderSlip, s => s.Arp),
+                    TotalCount = await slipDal.CountAsync(s => s.StateId == dto.StateId)
+                }, CustomJObject.Instance.General.Get);
+            }
+            catch (Exception ex)
+            {
+                await loggerDal.CreateAsync(new Logger
+                {
+                    CreatedDate = DateTime.Now,
+                    Message1 = ex.Message,
+                    Message2 = ex.InnerException == null ? "" : ex.InnerException.Message,
+                    MethodName = "SlipManager.GetListAsync",
+                    ProjectName = "Wms.Integration.Business",
+                    Statu = "Error",
+                });
+                return new ErrorDataResult<PagedResult<Slip>>(null, CustomJObject.Instance.General.Get);
+            }
+        }
+
         public async Task<IDataResult<Slip>> CreateAsync(Slip entity)
         {
             try

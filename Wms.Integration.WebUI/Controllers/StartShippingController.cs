@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using Wms.Integration.WebUI.Models;
 
 namespace Wms.Integration.WebUI.Controllers
 {
@@ -10,10 +8,10 @@ namespace Wms.Integration.WebUI.Controllers
         {
             return View();
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public async Task<IActionResult> Index(int Id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
+            //return View(await ApiHelper.GetListAsync<Slip>("Slip/GetList?StateId=3"));
         }
     }
 }

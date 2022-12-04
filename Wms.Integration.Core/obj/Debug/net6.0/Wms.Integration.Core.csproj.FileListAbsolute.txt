@@ -40,3 +40,17 @@ C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\refint\Wms.Integr
 C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.pdb
 C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.genruntimeconfig.cache
 C:\Netline\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\ref\Wms.Integration.Core.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.deps.json
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.runtimeconfig.json
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.csproj.AssemblyReference.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.AssemblyInfoInputs.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.AssemblyInfo.cs
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.csproj.CoreCompileInputs.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\refint\Wms.Integration.Core.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.genruntimeconfig.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\ref\Wms.Integration.Core.dll

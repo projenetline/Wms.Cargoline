@@ -1,0 +1,173 @@
+﻿
+@{
+    ViewData["Title"] = "TagEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="panel">
+	<div class="panel-heading">
+		<h3 class="panel-title">Input Grid</h3>
+	</div>
+	<div class="panel-body container-fluid">
+		<div class="row">
+			<p>Belgo No</p>
+			<div class="col-lg-6 form-group">
+				<input type="text" class="form-control" value="">
+			</div>
+
+			<div class="col-lg-6 form-group">
+				<input type="datetime-local" id="meeting-time" style="height:32px; float:right"
+					   name="meeting-time" value="2018-06-12T19:30"
+					   min="2018-06-07T00:00" max="2018-06-14T00:00">
+			</div>
+			<div class="col-lg-4 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-6">
+			</div>
+			<div class="col-lg-8 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-4">
+			</div>
+			<div class="col-lg-12 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-4">
+			</div>
+			<div class="col-lg-12 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-4">
+			</div>
+			<div class="col-lg-4 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-3">
+			</div>
+			<div class="col-lg-6 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-3">
+			</div>
+			<div class="col-lg-3 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-3">
+			</div>
+			<div class="col-lg-3 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-3">
+			</div>
+			<div class="col-lg-2 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-2">
+			</div>
+			<div class="col-lg-2 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-2">
+			</div>
+			<div class="col-lg-2 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-2">
+			</div>
+			<div class="col-lg-2 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-2">
+			</div>
+			<div class="col-lg-2 form-group">
+				<input type="text" class="form-control" placeholder=".col-lg-2">
+			</div>
+			<div class="form-group">
+				<div class="radio-custom radio-default radio-inline">
+					<input type="radio" id="inputLabelMale" name="inputRadioGender">
+					<label for="inputLabelMale">Male</label>
+				</div>
+				<div class="radio-custom radio-default radio-inline">
+					<input type="radio" id="inputLabelFemale" name="inputRadioGender" checked="">
+					<label for="inputLabelFemale">Female</label>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="page-content">
+	<div class="panel">
+		<div class="panel-body container-fluid">
+			<div class="row row-lg">
+				<div class="col-md-12">
+
+					<div class="example-wrap">
+						<h4 class="example-title">Etiket Düzenleme</h4>
+						<div class="example">
+							<form autocomplete="off">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label class="form-control-label" for="inputBasicFirstName">First Name</label>
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Belge No" autocomplete="off" />
+									</div>
+									@*<div class="form-group col-md-6">
+									<label class="form-control-label" for="inputBasicLastName">Last Name</label>
+									<input type="text" class="form-control" id="inputBasicLastName" name="inputLastName"
+									placeholder="Last Name" autocomplete="off" />
+									</div>*@
+								</div>
+								<div class="form-group">
+									<label class="form-control-label">Gender</label>
+									<div>
+										<div class="radio-custom radio-default radio-inline">
+											<input type="radio" id="inputBasicMale" name="inputGender" />
+											<label for="inputBasicMale">Firma</label>
+										</div>
+										<div class="radio-custom radio-default radio-inline">
+											<input type="radio" id="inputBasicFemale" name="inputGender" checked />
+											<label for="inputBasicFemale">Adres 1</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicEmail">Email Address</label>
+									<input type="email" class="form-control" id="inputBasicEmail" name="inputEmail"
+										   placeholder="Adres 2" autocomplete="off" />
+								</div>
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicPassword">Password</label>
+									<input type="password" class="form-control" id="inputBasicPassword" name="inputPassword"
+										   placeholder="İl" autocomplete="off" />
+								</div>
+								<div class="form-group">
+									<div class="checkbox-custom checkbox-default">
+										<input type="checkbox" id="inputBasicRemember" name="inputCheckbox" checked autocomplete="off" />
+										<label for="inputBasicRemember">Taşıyıcı</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicPassword">Password</label>
+									<input type="password" class="form-control" id="inputBasicPassword" name="inputPassword"
+										   placeholder="Etiket Adeti" autocomplete="off" />
+								</div>
+
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicPassword">Password</label>
+									<input type="password" class="form-control" id="inputBasicPassword" name="inputPassword"
+										   placeholder="Koli Adeti" autocomplete="off" />
+								</div>
+
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicPassword">Password</label>
+									<input type="password" class="form-control" id="inputBasicPassword" name="inputPassword"
+										   placeholder="Desi" autocomplete="off" />
+								</div>
+
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicPassword">Password</label>
+									<input type="password" class="form-control" id="inputBasicPassword" name="inputPassword"
+										   placeholder="Fatura Adeti " autocomplete="off" />
+								</div>
+
+								<div class="form-group">
+									<label class="form-control-label" for="inputBasicPassword">Password</label>
+									<input type="password" class="form-control" id="inputBasicPassword" name="inputPassword"
+										   placeholder="Palet" autocomplete="off" />
+								</div>
+								<div class="form-group">
+									<button type="button" class="btn btn-primary">Yazıcı</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+

@@ -76,6 +76,7 @@ namespace Wms.Integration.Entities.Concrete
         public virtual SysWarehouse Warehouse { get; set; }
         public virtual SysWarehouse Warehouse2 { get; set; }
         public virtual WorkOrderLine WorkOrderLine { get; set; }
+        public virtual ICollection<DecompositionLine> DecompositionLines { get; set; }
         public virtual ICollection<TransactionDetail> TransactionDetails { get; set; }
     }
 }

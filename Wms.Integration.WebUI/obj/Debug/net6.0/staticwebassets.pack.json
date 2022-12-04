@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\assets\\css\\site.min.css"
     },
     {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\assets\\data\\appsMailbox.json",
+      "PackagePath": "staticwebassets\\assets\\data\\appsMailbox.json"
+    },
+    {
       "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\assets\\data\\bootstrap_table_test.json",
       "PackagePath": "staticwebassets\\assets\\data\\bootstrap_table_test.json"
     },
@@ -1159,6 +1163,10 @@
     {
       "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\assets\\examples\\js\\pages\\code-editor.js",
       "PackagePath": "staticwebassets\\assets\\examples\\js\\pages\\code-editor.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\assets\\examples\\js\\pages\\eventdrops.js",
+      "PackagePath": "staticwebassets\\assets\\examples\\js\\pages\\eventdrops.js"
     },
     {
       "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\assets\\examples\\js\\pages\\faq.js",
@@ -20995,6 +21003,322 @@
     {
       "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\LICENSE",
+      "PackagePath": "staticwebassets\\sweetalert2\\package"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\README.md",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\README.md"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\dist\\sweetalert2.all.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\dist\\sweetalert2.all.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\dist\\sweetalert2.all.min.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\dist\\sweetalert2.all.min.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\dist\\sweetalert2.css",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\dist\\sweetalert2.css"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\dist\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\dist\\sweetalert2.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\dist\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\dist\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\dist\\sweetalert2.min.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\package.json",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\package.json"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\SweetAlert.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\SweetAlert.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\buttons-handlers.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\buttons-handlers.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\constants.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\constants.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\globalState.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\globalState.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\_destroy.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\_destroy.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\close.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\close.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\enable-disable-elements.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\enable-disable-elements.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\getInput.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\getInput.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\hideLoading.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\hideLoading.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\update.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\update.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\instanceMethods\\validation-message.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\instanceMethods\\validation-message.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\keydown-handler.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\keydown-handler.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\popup-click-handler.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\popup-click-handler.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\privateMethods.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\privateMethods.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\privateProps.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\privateProps.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_animations.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_animations.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_body.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_body.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_core.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_theming.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_theming.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_toasts-animations.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_toasts-animations.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_toasts-body.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_toasts-body.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\argsToParams.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\argsToParams.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\bindClickHandler.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\bindClickHandler.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\dom.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\dom.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\fire.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\fire.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\mixin.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\mixin.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\showLoading.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\showLoading.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\staticMethods\\timer.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\staticMethods\\timer.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\sweetalert2.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\sweetalert2.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\sweetalert2.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\sweetalert2.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\types.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\types.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\DismissReason.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\DismissReason.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\Timer.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\Timer.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\aria.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\aria.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\classes.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\classes.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\defaultInputValidators.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\defaultInputValidators.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\animationEndEvent.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\animationEndEvent.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\domUtils.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\domUtils.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\getters.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\getters.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\index.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\index.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\init.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\init.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\inputUtils.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\inputUtils.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\measureScrollbar.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\measureScrollbar.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\parseHtmlToContainer.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\parseHtmlToContainer.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\render.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\render.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderActions.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderActions.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderCloseButton.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderCloseButton.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderContainer.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderContainer.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderContent.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderContent.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderFooter.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderFooter.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderIcon.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderIcon.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderImage.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderImage.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderInput.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderInput.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderPopup.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderPopup.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderProgressSteps.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderProgressSteps.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderTitle.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\dom\\renderers\\renderTitle.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\getTemplateParams.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\getTemplateParams.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\iosFix.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\iosFix.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\isNodeEnv.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\isNodeEnv.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\openPopup.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\openPopup.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\params.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\params.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\scrollbarFix.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\scrollbarFix.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\setParameters.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\setParameters.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\utils\\utils.js",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\utils\\utils.js"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\src\\variables.scss",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\src\\variables.scss"
+    },
+    {
+      "Id": "C:\\Netline\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\sweetalert2\\package\\sweetalert2.d.ts",
+      "PackagePath": "staticwebassets\\sweetalert2\\package\\sweetalert2.d.ts"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Wms.Integration.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",

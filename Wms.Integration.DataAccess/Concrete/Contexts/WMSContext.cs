@@ -113,7 +113,7 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=NETLINE;Database=WMS2;user id=sa;password=net_123");
+                optionsBuilder.UseSqlServer("Server=192.168.16.3;Database=WmsAdmin;user id=sa;password=Deneme123");
             }
         }
 

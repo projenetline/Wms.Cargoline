@@ -1,0 +1,80 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<button class="btn btn-danger" data-target="#exampleFormModal" data-toggle="modal">Alert</button>
+<button class="btn btn-danger" onclick="Menu()">Popup</button>
+<button class="btn btn-success" name="pp" onclick="Menu2()">Popup2</button>
+
+
+
+
+<button class="btn btn-primary" data-target="#exampleMultipleOne" data-toggle="modal"
+        type="button">
+    Generate
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleMultipleOne" aria-hidden="true" aria-labelledby="exampleMultipleOne"
+     role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-simple">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button class="btn btn-success" data-target="#exampleMultipleTwo"
+                        data-toggle="modal" data-dismiss="modal" style="width:450px;height:50px">
+                    Blog Ýþlemi Yap
+                </button>
+                <br /><br /><button class="btn btn-danger" style="width:450px;height:50px">Raf Ýþlemi Yap</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- End Modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleMultipleTwo" aria-hidden="false" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog modal-simple">
+        <div class="modal-content">
+           @* <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>*@
+            <div class="modal-body">
+                <form class="modal-content" method="post" action="/StartShipping/Index?id=3">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xl-4 form-group">
+                                <input type="text" class="form-control" name="firstName" placeholder="First Name">
+                            </div>
+                            <div class="col-xl-4 form-group">
+                                <input type="email" class="form-control" name="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="col-xl-4 form-group">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email">
+                            </div>
+                            <div class="col-xl-12 form-group">
+                                <textarea class="form-control" rows="5" placeholder="Type your message"></textarea>
+                            </div>
+                            <div class="col-md-12 float-right">
+                                <button class="btn btn-primary btn-outline" data-dismiss="modal" type="button">Gönder</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-sm btn-white" data-dismiss="modal" href="javascript:void(0)"
+                   role="button">Kapat</a>
+            </div>
+        </div>
+    </div>
+</div>
+<input placeholder="Ahmet"></input>
+<div>Graph API result</div>
+<div>@ViewData["GraphApiResult"]</div>

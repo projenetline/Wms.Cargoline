@@ -43,3 +43,18 @@ C:\Netline\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integrati
 C:\Netline\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\refint\Wms.Integration.Entities.dll
 C:\Netline\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.pdb
 C:\Netline\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\ref\Wms.Integration.Entities.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\bin\Debug\net6.0\Wms.Integration.Entities.deps.json
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\bin\Debug\net6.0\Wms.Integration.Entities.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\bin\Debug\net6.0\Wms.Integration.Entities.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\bin\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\bin\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.csproj.AssemblyReference.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.AssemblyInfoInputs.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.AssemblyInfo.cs
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.csproj.CoreCompileInputs.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.csproj.CopyComplete
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\refint\Wms.Integration.Entities.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\Wms.Integration.Entities.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Entities\obj\Debug\net6.0\ref\Wms.Integration.Entities.dll

@@ -55,3 +55,22 @@ C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integrati
 C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\refint\Wms.Integration.Business.dll
 C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.pdb
 C:\Netline\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\ref\Wms.Integration.Business.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Business.deps.json
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Business.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Business.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.DataAccess.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Entities.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.DataAccess.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\bin\Debug\net6.0\Wms.Integration.Entities.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.csproj.AssemblyReference.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.AssemblyInfoInputs.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.AssemblyInfo.cs
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.csproj.CoreCompileInputs.cache
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.csproj.CopyComplete
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\refint\Wms.Integration.Business.dll
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\Wms.Integration.Business.pdb
+C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.Business\obj\Debug\net6.0\ref\Wms.Integration.Business.dll

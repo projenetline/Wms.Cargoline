@@ -207,7 +207,7 @@ builder.Services.AddSwaggerGen();
 
 
 
-builder.Services.AddDbContext<WMSContext>(options => options.UseSqlServer("Server=NETLINE;Database=WMS;user id=sa;password=net_123"));
+builder.Services.AddDbContext<WMSContext>(options => options.UseSqlServer("Server=192.168.16.3;Database=WMSPLATFORMDENEME;user id=sa;password=Deneme123"));
 
 var app = builder.Build();
 

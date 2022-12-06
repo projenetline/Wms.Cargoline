@@ -26,5 +26,6 @@ namespace Wms.Integration.Entities.Concrete
         public int? ModifiedBy { get; set; }
 
         public virtual ICollection<OrderSlip> OrderSlips { get; set; }
+        public virtual ICollection<CTag> CTags { get; set; }
     }
 }

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .site-navbar {
-  background-color: #3e8ef7; }
+    background-color: #009EFF;
+}
   @media (min-width: 768px) {
     .site-navbar .navbar-header {
       display: none; } }
@@ -205,8 +206,9 @@ body {
       .site-menu > .site-menu-item.open.hover > a {
         background: transparent; }
     .site-menu > .site-menu-item.hover > a, .site-menu > .site-menu-item:hover > a {
-      color: #37474f;
-      background-color: rgba(11, 105, 227, 0.05); }
+        color: #37474f;
+        background-color:  rgba(11, 105, 227, 0.05); 
+    }
     .site-menu > .site-menu-item.active {
       background: rgba(11, 105, 227, 0.05);
       border-top: 1px solid rgba(0, 0, 0, 0.04);

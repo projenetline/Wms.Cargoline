@@ -11,7 +11,6 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         public WMSContext()
         {
         }
-
         public WMSContext(DbContextOptions<WMSContext> options)
             : base(options)
         {
@@ -108,7 +107,6 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         public virtual DbSet<Vehicle> Vehicles { get; set; }
         public virtual DbSet<WorkOrder> WorkOrders { get; set; }
         public virtual DbSet<WorkOrderLine> WorkOrderLines { get; set; }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -116,7 +114,6 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
                 optionsBuilder.UseSqlServer("Server=192.168.16.3;Database=WmsAdmin;user id=sa;password=Deneme123");
             }
         }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AddressItem>(entity =>
@@ -4217,7 +4214,6 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
 
             OnModelCreatingPartial(modelBuilder);
         }
-
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

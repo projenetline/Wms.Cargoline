@@ -21,5 +21,6 @@ namespace Wms.Integration.Entities.Concrete
         public int? ModifiedBy { get; set; }
 
         public virtual ICollection<SysUser> SysUsers { get; set; }
+        public virtual ICollection<CTag> CTags { get; set; }
     }
 }

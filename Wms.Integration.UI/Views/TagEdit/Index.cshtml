@@ -1,0 +1,165 @@
+﻿@{
+	ViewData["Title"] = "TagEdit";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="page-content">
+	<div class="panel">
+		<div class="panel-body container-fluid">
+			<div class="row row-lg">
+				<div class="col-md-12">
+					<div class="example-wrap">
+						<h4 class="example-title" style="text-align:center; font-size:1.5rem;"><span class="label label-primary">Etiket Düzenleme</span></h4>
+						<br />
+						<div class="example">
+							<form autocomplete="off">
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label class="form-control-label" for="inputBasicFirstName">Belge No</label>
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Belge Numarası" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-4">
+
+									</div>
+									<div class="form-group col-md-2" style="height:32px; float:right; align-items:center;">
+										<label class="form-control-label" for="inputBasicFirstName" style="height:32px; text-align:center">Tarih</label>
+										<input class="form-control" type="datetime-local" id="meeting-time" style="height:36px; float:right" value="2023-01-01T08:30"
+											   name="meeting-time"   min="2018-06-07T00:00" max="2099-06-14T00:00">
+									</div>
+									@*<div class="form-group col-md-6">
+									<label class="form-control-label" for="inputBasicLastName">Last Name</label>
+									<input type="text" class="form-control" id="inputBasicLastName" name="inputLastName"
+									placeholder="Last Name" autocomplete="off" />
+									</div>
+									<div class="form-group">
+									<label class="form-control-label">Gender</label>
+									<div>
+									<div class="radio-custom radio-default radio-inline">
+									<input type="radio" id="inputBasicMale" name="inputGender" />
+									<label for="inputBasicMale">Firma</label>
+									</div>
+									<div class="radio-custom radio-default radio-inline">
+									<input type="radio" id="inputBasicFemale" name="inputGender" checked />
+									<label for="inputBasicFemale">Adres 1</label>
+									</div>
+									</div>
+									</div>
+									*@
+								</div>
+							    <div class="row">
+									<div class="form-group col-md-3">
+										<label class="form-control-label" for="inputBasicFirstName">Firma Bilgileri</label>
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Kod" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-9">
+										<label class="form-control-label" for="inputBasicFirstName" style="margin-top:14px"></label>
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Unvan" autocomplete="off" />
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputBasicEmail" name="inputEmail"
+										   placeholder="Adres 1" autocomplete="off" />
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="inputBasicEmail" name="inputEmail"
+										   placeholder="Adres 2" autocomplete="off" />
+								</div>
+								<div class="row">
+									<div class="form-group col-md-2">
+										<label class="form-control-label" for="inputBasicFirstName">İl :</label>
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-4">
+										<label class="form-control-label" for="inputBasicFirstName">Taşıyıcı :</label>
+										<select class="form-control" data-placeholder="Taşıyıcı" data-plugin="selectpicker" data-style="btn-outline btn-primary"
+												data-allow-clear="true">
+											<option></option>
+											<optgroup label="A">
+												<option value="AZ">A1 TAŞIYICI</option>
+												<option value="CO">A2 TAŞIYICI</option>
+												<option value="ID">A3 TAŞIYICI</option>
+											</optgroup>
+											<optgroup label="B">
+												<option value="AL">B1 TAŞIYICI</option>
+												<option value="AR">B2 TAŞIYICI</option>
+												<option value="IL">B3 TAŞIYICI</option>
+											</optgroup>
+										</select>
+									</div>
+									<div class="form-group col-md-2">
+									</div>
+									<div class="form-group col-md-2 " >
+									
+									</div>
+									<div class="form-group col-md-2" style="height:32px; float:right; align-items:center;">
+										<label class="form-control-label" for="inputBasicFirstName" style="height:32px; text-align:center">Tarih</label>
+										<input class="form-control" type="datetime-local" id="meeting-time" style="height:36px; float:right" value="2023-01-01T08:30"
+											   name="meeting-time" min="2018-06-07T00:00" max="2099-06-14T00:00">
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="form-group col-md-2">
+										@*<label class="form-control-label" for="inputBasicFirstName">Etiket Adeti</label>*@
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Etiket Adeti" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-2">
+										@*<label class="form-control-label" for="inputBasicFirstName">Koli Adeti</label>*@
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Koli Adeti" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-2">
+										@*<label class="form-control-label" for="inputBasicFirstName">Desi</label>*@
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Desi" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-2">
+										@*<label class="form-control-label" for="inputBasicFirstName">Fatura Adeti</label>*@
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Fatura Adeti" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-2">
+										@*<label class="form-control-label" for="inputBasicFirstName">Palet</label>*@
+										<input type="text" class="form-control" id="inputBasicFirstName" name="inputFirstName"
+											   placeholder="Palet" autocomplete="off" />
+									</div>
+									<div class="form-group col-md-2">
+										<div class="checkbox-custom checkbox-primary" style="vertical-align:bottom">
+											@*<label class="form-control" style="visibility:hidden"></label>*@
+											<input class="form-control" type="checkbox" name="inputCheckboxes"  />
+											<label>Palet - Sevk Değiştir </label>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-md-4">
+										<label class="form-control-label" for="inputBasicFirstName">Yazıcı :</label>
+										<select class="form-control" data-placeholder="YAZICI" data-plugin="selectpicker" data-style="btn-outline btn-primary"
+												data-allow-clear="true">
+											<option></option>
+											<option value="AZ">YAZICI 1</option>
+											<option value="CO">YAZICI 2</option>
+										</select>
+									</div>
+									<div class="form-group col-md-8">
+										 <label class="form-control" style="visibility:hidden"></label>
+										 <label class=>Sevk Adresine Gidicek. </label>
+									</div>
+								</div>
+								<div class="form-group" style="float:right;">
+									<button type="button" style="width:150px" class="btn btn-primary form-control">Kaydet ve Yazdır</button>
+									<button type="button" class="btn btn-danger ">Vazgeç</button>
+								</div>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

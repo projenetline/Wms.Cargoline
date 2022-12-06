@@ -1,8 +1,32 @@
-﻿
+﻿@using NonFactors.Mvc.Grid;
+@using Wms.Integration.Entities.Concrete;
+@model IQueryable<Slip>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h1>Index</h1>
-
+<div class="col-xxl-12 col-lg-12">
+    <div class="card card-shadow" id="widgetStackedBar">
+        <div class="card-block p-0">
+            <h4 class="example-title" style="text-align:center; font-size:1.5rem; margin-top:50px!important"><span class="label label-primary">Sevkiyat Listesi</span></h4>
+            <br />
+            @(
+                Html.Grid(Model)
+                .Build(columns =>
+                {
+                    columns.Add(model => model.Id).Titled("Id").Css("column-SId");
+                    columns.Add(Model => Model.SlipDate).Titled("Fiş Tarihi").Css("column-SSlipDate").Formatted("{0:dd.MM.yyyy}");
+                    columns.Add(Model => Model.SlipNumber).Titled("Fiş Numarası").Css("column-SSlipNumber");
+                    columns.Add(Model => Model.DocumentNumber).Titled("Döküman Numarası").Css("column-SDocumentNumber");
+                    columns.Add(Model => Model.Arp.Title).Titled("Cari Ünvanı").Css("column-SArpTitle");
+                    columns.Add(Model => Model.Arp.Code).Titled("Cari Kodu").Css("column-SArpCode");
+                    columns.Add(Model => "<div class='d-flex justify-content-center'><a href='/StartShipping/Index/" + Model.Id + "' class='btn btn-primary' style='Background-color:#009EFF'><i class='icon wb-edit' aria-hidden='true'></i></a></div>").Encoded(false).Titled("Seçim").Css("column-button");
+                })
+                .Empty("Veri Bulunmamaktadır!")
+                .Filterable()
+                .Sortable()
+                .Pageable()
+                )
+        </div>
+    </div>
+</div>

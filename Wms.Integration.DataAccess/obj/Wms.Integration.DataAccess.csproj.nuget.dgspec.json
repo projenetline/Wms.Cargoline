@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj": {}
+    "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
+    "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
+        "projectUniqueName": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
         "projectName": "Wms.Integration.Core",
-        "projectPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
-        "packagesPath": "C:\\Users\\MEHMET DOĞAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Core\\obj\\",
+        "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
+        "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MEHMET DOĞAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -93,22 +90,20 @@
         }
       }
     },
-    "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj": {
+    "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj",
         "projectName": "Wms.Integration.DataAccess",
-        "projectPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\MEHMET DOĞAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.DataAccess\\Wms.Integration.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MEHMET DOĞAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -117,7 +112,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -125,8 +119,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
-                "projectPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj"
+              "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
+                "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj"
               }
             }
           }
@@ -140,6 +134,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -160,22 +162,20 @@
         }
       }
     },
-    "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
+    "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
         "projectName": "Wms.Integration.Entities",
-        "projectPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
-        "packagesPath": "C:\\Users\\MEHMET DOĞAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Entities\\obj\\",
+        "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
+        "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\DevExpress 22.1\\Components\\Offline Packages",
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MEHMET DOĞAN\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.1.config",
+          "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -184,7 +184,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\DevExpress 22.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -192,8 +191,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
-                "projectPath": "C:\\Users\\MEHMET DOĞAN\\Downloads\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj"
+              "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
+                "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj"
               }
             }
           }

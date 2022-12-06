@@ -70,3 +70,22 @@ C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.DataAccess\obj\De
 C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\refint\Wms.Integration.DataAccess.dll
 C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.pdb
 C:\Users\MEHMET DOĞAN\Downloads\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\ref\Wms.Integration.DataAccess.dll
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.DataAccess.deps.json
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.DataAccess.runtimeconfig.json
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.DataAccess.dll
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.DataAccess.pdb
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.Entities.dll
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.Entities.pdb
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\bin\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.csproj.AssemblyReference.cache
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.AssemblyInfoInputs.cache
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.AssemblyInfo.cs
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.csproj.CopyComplete
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.dll
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\refint\Wms.Integration.DataAccess.dll
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.pdb
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\Wms.Integration.DataAccess.genruntimeconfig.cache
+C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.DataAccess\obj\Debug\net6.0\ref\Wms.Integration.DataAccess.dll

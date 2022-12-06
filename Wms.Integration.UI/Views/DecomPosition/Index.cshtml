@@ -1,9 +1,45 @@
 ﻿
-
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
 }
 
-<h1>Index</h1>
+ <nav style="padding-left:10px" class="navbar navbar-expand-sm bg-dark navbar-dark">
+       <form class="form-inline" action="/action_page.php">
+           <input class="form-control mr-sm-2" type="text" placeholder="Ürün Kodu">
+          <div class="combobox">
 
+             <select name="" aria-placeholder="SSS">
+                  <option value="Blok Seçiniz">Blok Seçiniz</option>
+                  <option value="">Blok 1</option>
+                  <option value="">Blok 2</option>
+                  <option value="">Blok 3</option>
+                  <option value="">Blok 4</option>
+                  <option value="">Blok 5</option>
+                  <option value="">Blok 6</option>
+                  <option value="">Blok 7</option>
+                       <option value="">Blok 8</option>
+                   <option value="">Blok 9</option>
+               </select>
+           </div>
+
+       </form>
+       <input type="button" value="Kapatmaya Gönder" class="right combobox btn btn-danger">
+       <input type="button" value="Çıkış Yap" onclick="@("window.location.href='" + @Url.Action("Index", "ShippingList") + "'");" class="buttonsclose combobox btn btn-warning">
+   </nav>
+   <br>
+<div class="page">
+    <div class="page-content container-fluid">
+         <div class="container" style="height:100%;width: 100%;">
+             <div class="cell cell-1" style="overflow-y: scroll">SİP12345<br> <hr> </div>
+             <div class="cell cell-2" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-3" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-4" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-5" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-6" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-7" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-8" style="overflow-y: scroll">SİP12345</div>
+             <div class="cell cell-9" style="overflow-y: scroll">SİP12345</div>
+         </div>
+</div>
+</div>

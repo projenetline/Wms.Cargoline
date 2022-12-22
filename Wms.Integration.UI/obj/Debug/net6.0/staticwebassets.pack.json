@@ -20793,6 +20793,10 @@
       "PackagePath": "staticwebassets\\img\\NetlineLogo.png"
     },
     {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\wwwroot\\img\\Search.png",
+      "PackagePath": "staticwebassets\\img\\Search.png"
+    },
+    {
       "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\wwwroot\\js\\mvc-grid\\mvc-grid.js",
       "PackagePath": "staticwebassets\\js\\mvc-grid\\mvc-grid.js"
     },

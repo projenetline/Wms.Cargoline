@@ -1,10 +1,7 @@
-﻿using AutoMapper.Internal.Mappers;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Wms.Integration.Business.Abstract;
 using Wms.Integration.Core.DataAccess.Utilities.Results;
 using Wms.Integration.Entities.Concrete;
-using Wms.Integration.Entities.Dtos.DecompositionLines;
 
 namespace Wms.Integration.API.Controllers
 {

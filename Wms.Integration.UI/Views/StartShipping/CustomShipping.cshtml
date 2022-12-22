@@ -1,0 +1,39 @@
+﻿@*@using NonFactors.Mvc.Grid;
+@using Wms.Integration.Entities.Concrete;
+@model IQueryable<Slip>*@
+@{
+    ViewData["Title"] = "Sevkiyat kapatma";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    #txtSearch {
+        width:100%;
+    }
+
+    #txtQuantity{
+        width:100%;
+    }
+    #btnKapat{
+        width: 100%;
+    }
+
+    #btnVazgec{
+        width:100%;
+    }
+</style>
+
+<div class="row">
+    <div class="form-group col-md-8">
+        <input id="txtSearch" type="text" class="form-control" placeholder="Barkod" />@*onkeyup="BarcodeRead(event)"*@
+    </div>
+    <div class="form-group col-md-1">
+        <input id="txtQuantity" type="text" class="form-control" placeholder="Miktar" /> @*onkeyup="BarcodeRead(event)"*@
+    </div>
+    <div class="form-group col-md-1">
+        <button id="btnKapat" class="btn btn-warning" type="button">Kapat</button> @*onclick="SevkOnay()"*@
+    </div>
+    <div class="form-group col-md-1">
+        <button id="btnVazgec" class="btn btn-warning" style="margin-left:12px;background-color:red" type="button">Vazgeç</button> @*onclick="SevkOnay()"*@
+    </div>
+</div>
+

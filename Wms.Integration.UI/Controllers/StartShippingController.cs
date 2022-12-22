@@ -10,8 +10,16 @@ namespace Wms.Integration.UI.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Index(int id)
+        public IActionResult Index( int id)
         {
+            if(id== 0)
+            {
+
+            }
+            else
+            {
+
+            }
             //Api GetId=3;
             return View();
         }
@@ -23,6 +31,12 @@ namespace Wms.Integration.UI.Controllers
 
         [HttpPost]
         public IActionResult ShippingClose()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public IActionResult CustomShipping()
         {
             return View();
         }

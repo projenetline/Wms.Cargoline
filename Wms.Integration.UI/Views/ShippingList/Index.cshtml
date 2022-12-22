@@ -20,7 +20,7 @@
                     columns.Add(Model => Model.DocumentNumber).Titled("Döküman Numarası").Css("column-SDocumentNumber");
                     columns.Add(Model => Model.Arp.Title).Titled("Cari Ünvanı").Css("column-SArpTitle");
                     columns.Add(Model => Model.Arp.Code).Titled("Cari Kodu").Css("column-SArpCode");
-                    columns.Add(Model => "<div class='d-flex justify-content-center'><a href='/StartShipping/Index/" + Model.Id + "' class='btn btn-primary' style='Background-color:#009EFF'><i class='icon wb-edit' aria-hidden='true'></i></a></div>").Encoded(false).Titled("Seçim").Css("column-button");
+                    columns.Add(Model => "<div class='d-flex justify-content-center'><a href='/StartShipping/Index?id=" + Model.Id + "' class='btn btn-primary' style='Background-color:#009EFF'><i class='icon wb-edit' aria-hidden='true'></i></a></div>").Encoded(false).Titled("Seçim").Css("column-button");
                 })
                 .Empty("Veri Bulunmamaktadır!")
                 .Filterable()

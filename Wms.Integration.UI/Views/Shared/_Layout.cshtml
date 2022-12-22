@@ -30,7 +30,6 @@
     <link rel="stylesheet" href="~/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
     <link rel="stylesheet" href="~/assets/examples/css/dashboard/v1.css">
 
-
     <!-- Fonts -->
     <link rel="stylesheet" href="~/global/fonts/weather-icons/weather-icons.css">
     <link rel="stylesheet" href="~/global/fonts/web-icons/web-icons.min.css">
@@ -41,10 +40,12 @@
     <script>
         Breakpoints();
     </script>
+  
 </head>
 <body class="animsition dashboard">
     <nav class="site-navbar navbar navbar-default navbar-inverse navbar-fixed-top navbar-mega"
          role="navigation">
+        @await RenderSectionAsync("navbarHeader", required: false)
         <div class="navbar-header">
             <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
                     data-toggle="menubar">
@@ -139,7 +140,7 @@
                                     </a>
                                 </li>
                                 <li class="site-menu-item">
-                                    <a class="animsition-link" asp-area="" asp-controller="StartShipping" asp-action="Index">
+                                    <a class="animsition-link" asp-area="" asp-controller="StartShipping" asp-action="CustomShipping">
                                         <span class="site-menu-title">Kapatma</span>
                                         <div class="site-menu-badge">
                                             <span class="badge badge-pill badge-orange"> </span>
@@ -238,7 +239,7 @@
                                     <a href="javascript:void(0)">
                                         <span class="site-menu-title">Barkod Listesi</span>
                                     </a>
-                                </li>
+                                </li>"""
                             </ul>
                         </li>
                         @*wb-hammer*@
@@ -254,6 +255,7 @@
         </div>
     </div>
 
+    @*<div class="page-content container-fluid">*@
     <!-- Page -->
     <div class="page">
         <div class="page-content container-fluid">
@@ -264,7 +266,8 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="site-footer-legal">© 2022 <a target="_blank" href="https://www.netline.net.tr/">NETLINE</a></div>
-      <!--  <div class="site-footer-right">
+        @await RenderSectionAsync("footer", required: false)
+        <!--  <div class="site-footer-right">
             Crafted with <i class="red-600 wb wb-heart"></i> by <a href="https://themeforest.net/user/creation-studio">Creation Studio</a>
         </div>-->
     </footer>

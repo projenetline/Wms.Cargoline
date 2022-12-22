@@ -1,0 +1,196 @@
+﻿using Wms.Integration.Core.DataAccess.Utilities.Security.Jwt;
+using Wms.Integration.Business.Abstract;
+using Wms.Integration.Business.Concrete;
+using Wms.Integration.DataAccess.Abstract;
+using Wms.Integration.DataAccess.Concrete;
+using Wms.Integration.Entities.Concrete;
+
+namespace Wms.Integration.API.Extensions
+{
+    public static class ServiceExtension
+    {
+        public static IServiceCollection ServiceAdd(this IServiceCollection builder)
+        {
+            #region Scoped Helpers
+            builder.AddScoped<ITokenHelper, JwtHelper>();
+            #endregion
+            #region Scoped Service - Manager  
+            builder.AddScoped<IAddressItemService, AddressItemManager>();
+            builder.AddScoped<IArpService, ArpManager>();
+            builder.AddScoped<IAuthService, AuthManager>();
+            builder.AddScoped<ICarrierService, CarrierManager>();
+            builder.AddScoped<IContainerService, ContainerManager>();
+            builder.AddScoped<IDecompositionService, DecompositionManager>();
+            builder.AddScoped<IDecompositionLineService, DecompositionLineManager>();
+            builder.AddScoped<IDecompositionShelfService, DecompositionShelfManager>();
+            builder.AddScoped<IDecompositionShelvesService, DecompositionShelvesManager>();
+            builder.AddScoped<IDocumentService, DocumentManager>();
+            builder.AddScoped<IDriverService, DriverManager>();
+            builder.AddScoped<IErpinvTotalService, ErpinvTotalManager>();
+            builder.AddScoped<IFormLayoutService, FormLayoutManager>();
+            builder.AddScoped<IHistoryDetailService, HistoryDetailManager>();
+            builder.AddScoped<IHistoryService, HistoryManager>();
+            builder.AddScoped<IItemClassRelationService, ItemClassRelationManager>();
+            builder.AddScoped<IItemContentService, ItemContentManager>();
+            builder.AddScoped<IItemExtraService, ItemExtraManager>();
+            builder.AddScoped<IItemParameterService, ItemParameterManager>();
+            builder.AddScoped<IItemService, ItemManager>();
+            builder.AddScoped<IItemTotalsReportViewService, ItemTotalsReportViewManager>();
+            builder.AddScoped<IItemTotalsViewService, ItemTotalsViewManager>();
+            builder.AddScoped<IItemTrackingTotalsViewService, ItemTrackingTotalsViewManager>();
+            builder.AddScoped<IItemUnitService, ItemUnitManager>();
+            builder.AddScoped<ILoggerService, LoggerManager>();
+            builder.AddScoped<ILoginHistoryService, LoginHistoryManager>();
+            builder.AddScoped<IOrderSlipLineService, OrderSlipLineManager>();
+            builder.AddScoped<IOrderSlipService, OrderSlipManager>();
+            builder.AddScoped<IPlanningSlipLineService, PlanningSlipLineManager>();
+            builder.AddScoped<IPlanningSlipService, PlanningSlipManager>();
+            builder.AddScoped<IProductionOrderService, ProductionOrderManager>();
+            builder.AddScoped<IProjectService, ProjectManager>();
+            builder.AddScoped<IReservationSlipLineService, ReservationSlipLineManager>();
+            builder.AddScoped<IReservationSlipService, ReservationSlipManager>();
+            builder.AddScoped<ISalesPersonService, SalesPersonManager>();
+            builder.AddScoped<IShiftPeriodService, ShiftPeriodManager>();
+            builder.AddScoped<IShiftService, ShiftManager>();
+            builder.AddScoped<IShipmentAddressService, ShipmentAddressManager>();
+            builder.AddScoped<IShipmentDayService, ShipmentDayManager>();
+            builder.AddScoped<ISlipService, SlipManager>();
+            builder.AddScoped<ISysAddressService, SysAddressManager>();
+            builder.AddScoped<ISysAuthCodeService, SysAuthCodeManager>();
+            builder.AddScoped<ISysBlockingExceptionService, SysBlockingExceptionManager>();
+            builder.AddScoped<ISysBlockingTypeService, SysBlockingTypeManager>();
+            builder.AddScoped<ISysContainerRelationService, SysContainerRelationManager>();
+            builder.AddScoped<ISysContainerTypeService, SysContainerTypeManager>();
+            builder.AddScoped<ISysCustomCodeService, SysCustomCodeManager>();
+            builder.AddScoped<ISysCustomListColumnService, SysCustomListColumnManager>();
+            builder.AddScoped<ISysCustomReportService, SysCustomReportManager>();
+            builder.AddScoped<ISysCustomRuleActionService, SysCustomRuleActionManager>();
+            builder.AddScoped<ISysCustomRuleService, SysCustomRuleManager>();
+            builder.AddScoped<ISysCustomSlipTypeService, SysCustomSlipTypeManager>();
+            builder.AddScoped<ISysCustomStateService, SysCustomStateManager>();
+            builder.AddScoped<ISysCustomTableService, SysCustomTableManager>();
+            builder.AddScoped<ISysDepartmentService, SysDepartmentManager>();
+            builder.AddScoped<ISysDivisionService, SysDivisionManager>();
+            builder.AddScoped<ISysErpFirmService, SysErpFirmManager>();
+            builder.AddScoped<ISysErpIntegrationService, SysErpIntegrationManager>();
+            builder.AddScoped<ISysErpService, SysErpManager>();
+            builder.AddScoped<ISysFactoryService, SysFactoryManager>();
+            builder.AddScoped<ISysLogService, SysLogManager>();
+            builder.AddScoped<ISysMenuRightService, SysMenuRightManager>();
+            builder.AddScoped<ISysNetLockService, SysNetLockManager>();
+            builder.AddScoped<ISysParameterService, SysParameterManager>();
+            builder.AddScoped<ISysPasswordHistoryService, SysPasswordHistoryManager>();
+            builder.AddScoped<ISysPasswordPolicyService, SysPasswordPolicyManager>();
+            builder.AddScoped<ISysPrinterService, SysPrinterManager>();
+            builder.AddScoped<ISysRoleService, SysRoleManager>();
+            builder.AddScoped<ISysScriptService, SysScriptManager>();
+            builder.AddScoped<ISysSessionService, SysSessionManager>();
+            builder.AddScoped<ISysUserService, SysUserManager>();
+            builder.AddScoped<ISysUserWarehouseService, SysUserWarehouseManager>();
+            builder.AddScoped<ISysWarehouseBlockService, SysWarehouseBlockManager>();
+            builder.AddScoped<ISysWarehouseFloorService, SysWarehouseFloorManager>();
+            builder.AddScoped<ISysWarehouseZoneService, SysWarehouseZoneManager>();
+            builder.AddScoped<ISysWarehouseService, SysWarehouseManager>();
+            builder.AddScoped<ITransactionDetailService, TransactionDetailManager>();
+            builder.AddScoped<ITransactionDetailViewService, TransactionDetailViewManager>();
+            builder.AddScoped<IUnitBarcodeService, UnitBarcodeManager>();
+            builder.AddScoped<IUserService, UserManager>();
+            builder.AddScoped<IVariantTotalsViewService, VariantTotalsViewManager>();
+            builder.AddScoped<IVariantTrackingTotalsViewService, VariantTrackingTotalsViewManager>();
+            builder.AddScoped<IVehicleService, VehicleManager>();
+            builder.AddScoped<IWorkOrderLineService, WorkOrderLineManager>();
+            builder.AddScoped<IWorkOrderService, WorkOrderManager>();
+
+            #endregion
+            #region Dal - EfDal
+
+            builder.AddScoped<ILoggerDal, EfLoggerDal>();
+            builder.AddScoped<IHttpLoggerDal, EfHttpLoggerDal>();
+            builder.AddScoped<IDecompositionDal, EfDecompositionDal>();
+            builder.AddScoped<IDecompositionLineDal, EfDecompositionLineDal>();
+            builder.AddScoped<IDecompositionShelfDal, EfDecompositionShelfDal>();
+            builder.AddScoped<IDecompositionShelvesDal, EfDecompositionShelvesDal>();
+            builder.AddScoped<IUserDal, EfUserDal>();
+            builder.AddScoped<IAddressItemDal, EfAddressItemDal>();
+            builder.AddScoped<IArpDal, EfArpDal>();
+            builder.AddScoped<ICarrierDal, EfCarrierDal>();
+            builder.AddScoped<IContainerDal, EfContainerDal>();
+            builder.AddScoped<IDocumentDal, EfDocumentDal>();
+            builder.AddScoped<IDriverDal, EfDriverDal>();
+            builder.AddScoped<IErpinvTotalDal, EfErpinvTotalDal>();
+            builder.AddScoped<IFormLayoutDal, EfFormLayoutDal>();
+            builder.AddScoped<IHistoryDetailDal, EfHistoryDetailDal>();
+            builder.AddScoped<IHistoryDal, EfHistoryDal>();
+            builder.AddScoped<IItemClassRelationDal, EfItemClassRelationDal>();
+            builder.AddScoped<IItemContentDal, EfItemContentDal>();
+            builder.AddScoped<IItemExtraDal, EfItemExtraDal>();
+            builder.AddScoped<IItemParameterDal, EfItemParameterDal>();
+            builder.AddScoped<IItemDal, EfItemDal>();
+            builder.AddScoped<IItemTotalsReportViewDal, EfItemTotalsReportViewDal>();
+            builder.AddScoped<IItemTotalsViewDal, EfItemTotalsViewDal>();
+            builder.AddScoped<IItemTrackingTotalsViewDal, EfItemTrackingTotalsViewDal>();
+            builder.AddScoped<IItemUnitDal, EfItemUnitDal>();
+            builder.AddScoped<ILoginHistoryDal, EfLoginHistoryDal>();
+            builder.AddScoped<IOrderSlipLineDal, EfOrderSlipLineDal>();
+            builder.AddScoped<IOrderSlipDal, EfOrderSlipDal>();
+            builder.AddScoped<IPlanningSlipLineDal, EfPlanningSlipLineDal>();
+            builder.AddScoped<IPlanningSlipDal, EfPlanningSlipDal>();
+            builder.AddScoped<IProductionOrderDal, EfProductionOrderDal>();
+            builder.AddScoped<IProjectDal, EfProjectDal>();
+            builder.AddScoped<IReservationSlipLineDal, EfReservationSlipLineDal>();
+            builder.AddScoped<IReservationSlipDal, EfReservationSlipDal>();
+            builder.AddScoped<ISalesPersonDal, EfSalesPersonDal>();
+            builder.AddScoped<IShiftPeriodDal, EfShiftPeriodDal>();
+            builder.AddScoped<IShiftDal, EfShiftDal>();
+            builder.AddScoped<IShipmentAddressDal, EfShipmentAddressDal>();
+            builder.AddScoped<IShipmentDayDal, EfShipmentDayDal>();
+            builder.AddScoped<ISlipDal, EfSlipDal>();
+            builder.AddScoped<ISysAddressDal, EfSysAddressDal>();
+            builder.AddScoped<ISysAuthCodeDal, EfSysAuthCodeDal>();
+            builder.AddScoped<ISysBlockingExceptionDal, EfSysBlockingExceptionDal>();
+            builder.AddScoped<ISysBlockingTypeDal, EfSysBlockingTypeDal>();
+            builder.AddScoped<ISysContainerRelationDal, EfSysContainerRelationDal>();
+            builder.AddScoped<ISysContainerTypeDal, EfSysContainerTypeDal>();
+            builder.AddScoped<ISysCustomCodeDal, EfSysCustomCodeDal>();
+            builder.AddScoped<ISysCustomListColumnDal, EfSysCustomListColumnDal>();
+            builder.AddScoped<ISysCustomReportDal, EfSysCustomReportDal>();
+            builder.AddScoped<ISysCustomRuleActionDal, EfSysCustomRuleActionDal>();
+            builder.AddScoped<ISysCustomRuleDal, EfSysCustomRuleDal>();
+            builder.AddScoped<ISysCustomSlipTypeDal, EfSysCustomSlipTypeDal>();
+            builder.AddScoped<ISysCustomStateDal, EfSysCustomStateDal>();
+            builder.AddScoped<ISysCustomTableDal, EfSysCustomTableDal>();
+            builder.AddScoped<ISysDepartmentDal, EfSysDepartmentDal>();
+            builder.AddScoped<ISysDivisionDal, EfSysDivisionDal>();
+            builder.AddScoped<ISysErpFirmDal, EfSysErpFirmDal>();
+            builder.AddScoped<ISysErpIntegrationDal, EfSysErpIntegrationDal>();
+            builder.AddScoped<ISysErpDal, EfSysErpDal>();
+            builder.AddScoped<ISysFactoryDal, EfSysFactoryDal>();
+            builder.AddScoped<ISysLogDal, EfSysLogDal>();
+            builder.AddScoped<ISysMenuRightDal, EfSysMenuRightDal>();
+            builder.AddScoped<ISysNetLockDal, EfSysNetLockDal>();
+            builder.AddScoped<ISysParameterDal, EfSysParameterDal>();
+            builder.AddScoped<ISysPasswordHistoryDal, EfSysPasswordHistoryDal>();
+            builder.AddScoped<ISysPasswordPolicyDal, EfSysPasswordPolicyDal>();
+            builder.AddScoped<ISysPrinterDal, EfSysPrinterDal>();
+            builder.AddScoped<ISysRoleDal, EfSysRoleDal>();
+            builder.AddScoped<ISysScriptDal, EfSysScriptDal>();
+            builder.AddScoped<ISysSessionDal, EfSysSessionDal>();
+            builder.AddScoped<ISysUserDal, EfSysUserDal>();
+            builder.AddScoped<ISysUserWarehouseDal, EfSysUserWarehouseDal>();
+            builder.AddScoped<ISysWarehouseBlockDal, EfSysWarehouseBlockDal>();
+            builder.AddScoped<ISysWarehouseFloorDal, EfSysWarehouseFloorDal>();
+            builder.AddScoped<ISysWarehouseZoneDal, EfSysWarehouseZoneDal>();
+            builder.AddScoped<ISysWarehouseDal, EfSysWarehouseDal>();
+            builder.AddScoped<ITransactionDetailDal, EfTransactionDetailDal>();
+            builder.AddScoped<ITransactionDetailViewDal, EfTransactionDetailViewDal>();
+            builder.AddScoped<IUnitBarcodeDal, EfUnitBarcodeDal>();
+            builder.AddScoped<IVariantTotalsViewDal, EfVariantTotalsViewDal>();
+            builder.AddScoped<IVariantTrackingTotalsViewDal, EfVariantTrackingTotalsViewDal>();
+            builder.AddScoped<IVehicleDal, EfVehicleDal>();
+            builder.AddScoped<IWorkOrderLineDal, EfWorkOrderLineDal>();
+            builder.AddScoped<IWorkOrderDal, EfWorkOrderDal>();
+            #endregion
+            return builder;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Wms.Integration.Business.Abstract;
+using Wms.Integration.Business.Extensions;
 using Wms.Integration.Core.DataAccess.Utilities.Results;
 using Wms.Integration.Entities.Concrete;
 using Wms.Integration.Entities.Dtos.PurchaseOrders;
@@ -22,11 +23,13 @@ namespace Wms.Integration.API.Controllers
         private readonly IMapper objectMapper;
         private readonly ILoggerService loggerService;
         private readonly IOrderSlipLineService orderSlipLineService;
+        private readonly IWorkOrderService workOrderService;
         public PurchaseOrdersController(IOrderSlipService orderSlipService, ISysWarehouseService warehouseService, IArpService arpService,
                                         IItemService itemService, ISysFactoryService factoryService, ISysDivisionService divisionService,
                                         ISysDepartmentService departmentService, IMapper objectMapper, ILoggerService loggerService,
-                                        IItemUnitService itemUnitService,IOrderSlipLineService orderSlipLineService)
+                                        IItemUnitService itemUnitService,IOrderSlipLineService orderSlipLineService,IWorkOrderService workOrderService)
         {
+            this.workOrderService = workOrderService;
             this.orderSlipLineService = orderSlipLineService;
             this.itemUnitService = itemUnitService;
             this.itemService = itemService;
@@ -160,6 +163,38 @@ namespace Wms.Integration.API.Controllers
                     Statu="Error"
                 }) ;
                 return BadRequest($"İstenilmeyen bir hata ile karşılaşıldı! Error Id:{logger.Id} "); 
+            }
+        }
+
+        [HttpPost("CreateMovement")]
+        public async Task<IActionResult> CreateHareket([FromBody] CreatePurchaseWorkOrderDto dto)
+        {
+            try
+            {
+                //await workOrderService.GetAsync(MappingExtensions.CreateWorkOrder(dto));
+                //await workOrderService.CreateAsync(new WorkOrder
+                //{
+                    //Id = 0,
+                    //SlipType = 1,
+                    //CustomSlipTypeId = 2,
+                    //CarrierId = null,
+                    //SlipDate = DateTime.Now,
+                    //SlipNumber =);
+                //});
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                Logger logger = await loggerService.CreateAsync(new Logger
+                {
+                    Message1 = ex.Message,
+                    Message2 = ex.InnerException == null ?"":ex.InnerException.Message,
+                    CreatedDate = DateTime.Now,
+                    MethodName= "PurchaseOrdersController.CreateOrder",
+                    ProjectName= "Wms.Integration.API",
+                    Statu="Error"
+                }) ;
+                return BadRequest($"İstenilmeyen bir hata ile karşılaşıldı! Error Id:{logger.Id}");
             }
         }
     }

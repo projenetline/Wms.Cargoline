@@ -1,10 +1,9 @@
 ﻿using Wms.Integration.Business.Abstract;
-using Wms.Integration.Core.Core.Abstract;
+using Wms.Integration.Business.Extensions;
 using Wms.Integration.Core.DataAccess.Utilities.Results;
-using Wms.Integration.Core.Entities.Abstract;
 using Wms.Integration.DataAccess.Abstract;
-using Wms.Integration.DataAccess.Concrete;
 using Wms.Integration.Entities.Concrete;
+using Wms.Integration.Entities.Dtos.PurchaseOrders;
 using Wms.Integration.Entities.JsonObjects;
 
 namespace Wms.Integration.Business.Concrete

@@ -1485,6 +1485,18 @@
       "PackagePath": "staticwebassets\\assets\\skins\\yellow.min.css"
     },
     {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\css\\registration.css",
+      "PackagePath": "staticwebassets\\css\\registration.css"
+    },
+    {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\css\\rememberPassword.css",
+      "PackagePath": "staticwebassets\\css\\rememberPassword.css"
+    },
+    {
       "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -20771,6 +20783,22 @@
     {
       "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\global\\vendor\\x-editable\\bootstrap-editable.min.js",
       "PackagePath": "staticwebassets\\global\\vendor\\x-editable\\bootstrap-editable.min.js"
+    },
+    {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\img\\Login.png",
+      "PackagePath": "staticwebassets\\img\\Login.png"
+    },
+    {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\img\\NetlineLogo.png",
+      "PackagePath": "staticwebassets\\img\\NetlineLogo.png"
+    },
+    {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\img\\Phone.png",
+      "PackagePath": "staticwebassets\\img\\Phone.png"
+    },
+    {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\img\\Search.png",
+      "PackagePath": "staticwebassets\\img\\Search.png"
     },
     {
       "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.WebUI\\wwwroot\\js\\site.js",

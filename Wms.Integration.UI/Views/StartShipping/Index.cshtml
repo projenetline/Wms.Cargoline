@@ -114,10 +114,10 @@
         letter-spacing: -2px;
     }
 
-        #title span {
-            font-weight: normal;
-            color: #BBB;
-        }
+     #title span {
+         font-weight: normal;
+         color: #BBB;
+     }
 
     #tags {
         -webkit-border-radius: 10px;
@@ -334,55 +334,171 @@
     <div class="row">
         <div class="col-sm">
             <div class="s01">
-                <form>
+               
+                <div class="testing">
                     <fieldset>
                     </fieldset>
                     <div class="inner-form">
                         <div class="input-field first-wrap">
-                            <input id="search" type="text" placeholder="Barkod" />
+                            <input id="search" type="text" placeholder="Barkod" />@*onkeypress="BarcodeRead()" *@
                         </div>
                         <div class="input-field third-wrap">
                             <button class="btn btn-warning" onclick="SevkOnay()" type="button">Kapat</button>
+                            <button class="btn btn-warning" style="margin-left:12px;background-color:red" onclick="SevkVazgec()" type="button">Vazgeç</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
-
-      
 
 
         <div class="grid-table-row col-sm-12">
             <div class="grid-table-cell " data-title="Title">
                 <label for="tag-typer">
                     <div id="tags">
-                        <span class="btn btn-danger"><span></span>0</span>
-                        <span class="btn btn-success"><span></span>0</span>
-                        <input id="tag-typer" type="text" placeholder="Ürün Adı" />
+                        <span class="btn btn-danger"><span></span>10</span>
+                        <span class="btn btn-success"><span></span>3</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="ATODERM CREAM 500 ML" />
                     </div>
                 </label>
             </div>
             <div class="grid-table-cell " data-title="Title">
                 <label for="tag-typer">
                     <div id="tags">
-                        <span class="btn  btn-danger"><span></span>0</span>
-                        <span class="btn btn-success"><span></span>0</span>
-                        <input id="tag-typer" type="text" placeholder="Ürün Adı" />
+                        <span class="btn  btn-danger"><span></span>5</span>
+                        <span class="btn btn-success"><span></span>2</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="SEBIUM SERUM" />
                     </div>
                 </label>
             </div>
             <div class="grid-table-cell " data-title="Title">
                 <label for="tag-typer">
                     <div id="tags">
-                        <span class="btn  btn-danger"><span></span>0</span>
-                        <span class="btn btn-success"><span></span>0</span>
-                        <input id="tag-typer" type="text" placeholder="Ürün Adı" />
+                        <span class="btn  btn-danger"><span></span>4</span>
+                        <span class="btn btn-success"><span></span>1</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="SENSIBIO DS+ CREAM" />
+                    </div>
+                </label>
+            </div>
+            <div class="grid-table-cell " data-title="Title">
+                <label for="tag-typer">
+                    <div id="tags">
+                        <span class="btn  btn-danger"><span></span>7</span>
+                        <span class="btn btn-success"><span></span>2</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="ATODERM LIP STICK" />
+                    </div>
+                </label>
+            </div>
+            <div class="grid-table-cell " data-title="Title">
+                <label for="tag-typer">
+                    <div id="tags">
+                        <span class="btn  btn-danger"><span></span>8</span>
+                        <span class="btn btn-success"><span></span>1</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="HYDRABIO H2O 250 ML" />
+                    </div>
+                </label>
+            </div>
+            <div class="grid-table-cell " data-title="Title">
+                <label for="tag-typer">
+                    <div id="tags">
+                        <span class="btn  btn-danger"><span></span>9</span>
+                        <span class="btn btn-success"><span></span>1</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="CICABIO LOTION" />
+                    </div>
+                </label>
+            </div>
+            <div class="grid-table-cell " data-title="Title">
+                <label for="tag-typer">
+                    <div id="tags">
+                        <span class="btn  btn-danger"><span></span>5</span>
+                        <span class="btn btn-success"><span></span>1</span>
+                        <input id="tag-typer" type="text" readonly="readonly" placeholder="ATODERM LIP STICK" />
                     </div>
                 </label>
             </div>
         </div>
     </div>
 </div>
+
+
+<script>
+    document.getElementById("search").addEventListener("keyup",function(event){
+        console.log(event.key);
+        console.log(event.keyCode);
+        if (event.key === "Enter") {
+            $.ajax({
+                type:'get',
+                URL:'/StartShippping/Index',
+                contentType:'application/json',
+                dataType:'text',
+                success:function(data){
+                    alert(data);
+                },
+                Error:function(data){
+                    alert(data);
+                }
+            });
+        }
+    })
+
+    const  SevkOnay = () => {
+        console.log("Kapatma girişi!");
+        //$.ajax({
+            
+        //});
+    }
+    const SevkVazgec=()=>{
+        console.log("Sevkiyattan vazgeçilsin mi?");
+    }
+</script>
+@*<script>
+    const token="";
+    const node = document.getElementById("search");
+    node.addEventListener("keyup", function (event) {
+        console.log(event.key)
+        if (event.key === "Enter") {
+            $.ajax({
+                type: 'get',
+                url: '/StartShipping/Index',
+                contentType: 'application/json',
+                Headers: {
+                    Authorization: 'Bearer '+ token
+                },
+                dataType: 'text',
+                success: success: function(data) {
+                    alert(data);
+                },
+                error: function(data) {
+                    alert(data);
+                }
+            });
+        }
+    })
+</script>*@
+
+@*
+
+
+<script>
+    document.getElementById("search").addEventListener("keyup",function(event) {
+
+       if(event.keyCode===13 ||event.key==='Enter'){
+            debugger;
+            //event.preventDefault();
+            $.ajax({
+                type: 'get',
+                url: '/StartShipping/BarcodeRead',
+                contentType: 'application/json',
+                Headers: {
+                    Authorization: 'Bearer' + token
+                },
+                dataType: 'text',
+            });
+       }
+    })
+</script>
+
+*@
 
 
 @*              <div class="modal fade" id="exampleFormModal" aria-hidden="false" aria-labelledby="exampleFormModalLabel"

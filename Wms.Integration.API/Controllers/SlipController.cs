@@ -1,11 +1,8 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Wms.Integration.Business.Abstract;
 using Wms.Integration.Core.DataAccess.Utilities.Results;
-using Wms.Integration.DataAccess.Abstract;
 using Wms.Integration.Entities.Concrete;
-using Wms.Integration.Entities.Dtos.Decompositions;
 using Wms.Integration.Entities.Dtos.Slip;
 
 namespace Wms.Integration.API.Controllers

@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-Wms.Integration.WebUI-05beffcc-c424-4fe2-828f-bfb2a4121510</UserSecretsId>
   </PropertyGroup>

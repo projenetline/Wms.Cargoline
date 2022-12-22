@@ -25,7 +25,7 @@
                     columns.Add(Model => Model.SlipAmount).Titled("Fatura Adeti");
                     columns.Add(Model => Model.TagAmount).Titled("Etiket Adeti");
                     columns.Add(Model => Model.ShippingDate).Titled("Sevk Tarihi").Formatted("{0:dd.MM.yyyy}");
-                    columns.Add(Model => "<div class='d-flex justify-content-center'><a href='/TagEdit/Index?" + Model.Id + "' class='btn btn-primary' style='Background-color:#009EFF'><i class='icon wb-edit' aria-hidden='true'></i></a></div>").Encoded(false).Titled("Seçim").Css("column-button");
+                    columns.Add(Model => "<div class='d-flex justify-content-center'><a href='/TagEdit/Index?id=" + Model.Id + "' class='btn btn-primary' style='Background-color:#009EFF'><i class='icon wb-edit' aria-hidden='true'></i></a></div>").Encoded(false).Titled("Seçim").Css("column-button");
                 })
                 .Empty("Veri Bulunmamaktadır!")
                 .Filterable()

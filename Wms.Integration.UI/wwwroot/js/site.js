@@ -28,16 +28,82 @@ function baseUrl() {
 //    });
 //});
 
+//document.getElementById("search").addEventListener("keypress", function (e) {
+//    console.log(e.keyCode);
+//    if (e.keyCode != 13) {
+
+//    }
+//    e.preventDefault();
+//});
+
+//const BarcodeRead = (event) => {
+//    console.log(event.keyCode);
+//    if (event.keyCode === 13 || event.key === 'Enter') {
+//        //event.preventDefault();
+//        $.ajax({
+//            type: 'get',
+//            url: '/StartShipping/BarcodeRead',
+//            contentType: 'application/json',
+//            Headers: {
+//                Authorization: 'Bearer' + token
+//            },
+//            dataType: 'text',
+//        });
+//    }
+//}
+
+//document.getElementById("search").addEventListener("keyup", function (event) {
+//    console.log(event.keyCode);
+//    if (event.keyCode === 13 || event.key === 'Enter') {
+//        //event.preventDefault();
+//        $.ajax({
+//            type: 'get',
+//            url: '/StartShipping/BarcodeRead',
+//            contentType: 'application/json',
+//            Headers: {
+//                Authorization: 'Bearer' + token
+//            },
+//            dataType: 'text',
+//        });
+//    }
+//})
+
+//$('#search').on('keydown', function (e) {
+//    console.log(e.key);
+//    if (e.key == 'Enter') {
+//        console.log('Entered');
+//    }
+//});
 
 
+//const node = document.getElementById("search")[0];
+//node.addEventListener("keyup", function (event) {
+//    console.log(event.key)
+//    console.log(even.key)
+//    if (event.key === "Enter") {
+//        // Do work
+//    }
+//})
+
+//$("#search").on('keyup', function (e) {
+//    console.log()
+//    if (e.key === 'Enter' || e.keyCode === 13) {
+//        // Do something
+//    }
+//});
+
+const jwt = "";
+document.getElementById("")
 const SevkList = () => {
     $.ajax({
         type: 'get',
         url: '/ShippingList/Index',
-        contentType: 'application/text',
+        contentType: 'application/json',
+        Headers: {
+            Authorization:'Bearer'+token
+            },
         dataType: 'text',
-    });
-        
+    });     
 }
 const SevkOnay = () => {
     $.ajax({
@@ -121,6 +187,9 @@ function Sweet1(id) {
                         else {
 
                         }
+                    },
+                    Error: function (data) {
+
                     }
                 })
             }

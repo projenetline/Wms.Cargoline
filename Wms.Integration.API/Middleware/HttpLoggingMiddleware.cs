@@ -1,11 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Http;
-using Microsoft.IO;
-using NuGet.Protocol;
-using System.IO;
+﻿using Microsoft.IO;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Wms.Integration.Business.Abstract;
 using Wms.Integration.Business.Concrete;
 using Wms.Integration.DataAccess.Concrete;

@@ -19,16 +19,16 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         public virtual DbSet<OperationClaim> OperationClaims { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserOperationClaim> UserOperationClaims { get; set; }
-
+       //
         //---------------------------------------------------------------
         public virtual DbSet<AddressItem> AddressItems { get; set; }
         public virtual DbSet<Arp> Arps { get; set; }
         public virtual DbSet<Carrier> Carriers { get; set; }
         public virtual DbSet<Container> Containers { get; set; }
-        public virtual DbSet<Decomposition> Decompositions { get; set; }
-        public virtual DbSet<DecompositionLine> DecompositionLines { get; set; }
-        public virtual DbSet<DecompositionShelf> DecompositionShelfs { get; set; }
-        public virtual DbSet<DecompositionShelves> DecompositionShelves { get; set; }
+       // public virtual DbSet<Decomposition> Decompositions { get; set; }
+       // public virtual DbSet<DecompositionLine> DecompositionLines { get; set; }
+       // public virtual DbSet<DecompositionShelf> DecompositionShelfs { get; set; }
+       // public virtual DbSet<DecompositionShelves> DecompositionShelves { get; set; }
         public virtual DbSet<Document> Documents { get; set; }
         public virtual DbSet<Driver> Drivers { get; set; }
         public virtual DbSet<ErpinvTotal> ErpinvTotals { get; set; }
@@ -111,7 +111,7 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=192.168.16.3;Database=WmsAdmin;user id=sa;password=Deneme123");
+                optionsBuilder.UseSqlServer("Server=192.168.16.3;Database=OCAK2023;user id=sa;password=Deneme123");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -285,152 +285,152 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
                       .HasConstraintName("fk_Container_ContainerTypeId");
             });
 
-            modelBuilder.Entity<Decomposition>(entity =>
-            {
-                entity.ToTable("Decomposition");
-                entity.Property(s => s.CreatedDate)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.DateTime.ToString())
-                      .HasDefaultValue(DateTime.Now);
+            //modelBuilder.Entity<Decomposition>(entity =>
+            //{
+            //    entity.ToTable("Decomposition");
+            //    entity.Property(s => s.CreatedDate)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.DateTime.ToString())
+            //          .HasDefaultValue(DateTime.Now);
 
-                entity.Property(s => s.Id)
-                      .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.Id)
+            //          .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.HasKey(s => s.Id);
+            //    entity.HasKey(s => s.Id);
 
-                entity.Property(s => s.CreatedBy)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.CreatedBy)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.ModifiedDate)
-                      .HasColumnType(SqlDbType.DateTime.ToString());
+            //    entity.Property(s => s.ModifiedDate)
+            //          .HasColumnType(SqlDbType.DateTime.ToString());
 
-                entity.Property(s => s.ModifiedBy)
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.ModifiedBy)
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.IsCompleted)
-                      .HasColumnType(SqlDbType.Bit.ToString());
+            //    entity.Property(s => s.IsCompleted)
+            //          .HasColumnType(SqlDbType.Bit.ToString());
 
-                entity.Property(s => s.DecompositionShelfId)
-                      .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.DecompositionShelfId)
+            //          .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.HasOne(s => s.DecompositionShelf)
-                      .WithMany(s => s.Decompositions)
-                      .HasForeignKey(s => s.DecompositionShelfId);
-                // .HasConstraintName("fk_Decomposition_DecompositionShelfId");
-            });
+            //    entity.HasOne(s => s.DecompositionShelf)
+            //          .WithMany(s => s.Decompositions)
+            //          .HasForeignKey(s => s.DecompositionShelfId);
+            //    // .HasConstraintName("fk_Decomposition_DecompositionShelfId");
+            //});
 
-            modelBuilder.Entity<DecompositionLine>(entity =>
-            {
-                entity.ToTable("DecompositionLine");
+            //modelBuilder.Entity<DecompositionLine>(entity =>
+            //{
+            //    entity.ToTable("DecompositionLine");
 
-                entity.Property(s => s.Id)
-                      .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.Id)
+            //          .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.HasKey(s => s.Id);
+            //    entity.HasKey(s => s.Id);
 
-                entity.Property(s => s.SlipLineId)
-                       .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.SlipLineId)
+            //           .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.DecompositionShelvesId)
-                     .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.DecompositionShelvesId)
+            //         .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.Property(s => s.Amount)
-                     .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.Amount)
+            //         .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.CreatedDate)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.DateTime.ToString())
-                      .HasDefaultValue(DateTime.Now);
+            //    entity.Property(s => s.CreatedDate)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.DateTime.ToString())
+            //          .HasDefaultValue(DateTime.Now);
 
-                entity.Property(s => s.CreatedBy)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.CreatedBy)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.ModifiedDate)
-                      .HasColumnType(SqlDbType.DateTime.ToString());
+            //    entity.Property(s => s.ModifiedDate)
+            //          .HasColumnType(SqlDbType.DateTime.ToString());
 
-                entity.Property(s => s.ModifiedBy)
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.ModifiedBy)
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.HasOne(s => s.SlipLine)
-                      .WithMany(s => s.DecompositionLines)
-                      .HasForeignKey(s => s.SlipLineId);
-                //.HasConstraintName("fk_Decomposition_OrderSlipLineId");
+            //    //entity.HasOne(s => s.SlipLine)
+            //    //      .WithMany(s => s.DecompositionLines)
+            //    //      .HasForeignKey(s => s.SlipLineId);
+            //    //.HasConstraintName("fk_Decomposition_OrderSlipLineId");
 
-                entity.HasOne(s => s.DecompositionShelves)
-                     .WithMany(s => s.DecompositionLines)
-                     .HasForeignKey(s => s.DecompositionShelvesId);
-                //.HasConstraintName("fk_Decomposition_DecompositionShelvesId");
-            });
+            //    entity.HasOne(s => s.DecompositionShelves)
+            //         .WithMany(s => s.DecompositionLines)
+            //         .HasForeignKey(s => s.DecompositionShelvesId);
+            //    //.HasConstraintName("fk_Decomposition_DecompositionShelvesId");
+            //});
 
-            modelBuilder.Entity<DecompositionShelf>(entity =>
-            {
-                entity.ToTable("DecompositionShelf");
+            //modelBuilder.Entity<DecompositionShelf>(entity =>
+            //{
+            //    entity.ToTable("DecompositionShelf");
 
-                entity.Property(s => s.Id)
-                      .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.Id)
+            //          .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.HasKey(s => s.Id);
-                entity.Property(s => s.Description)
-                      .HasColumnType(SqlDbType.NVarChar.ToString()).HasMaxLength(250);
+            //    entity.HasKey(s => s.Id);
+            //    entity.Property(s => s.Description)
+            //          .HasColumnType(SqlDbType.NVarChar.ToString()).HasMaxLength(250);
 
-                entity.Property(s => s.CreatedDate)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.DateTime.ToString())
-                      .HasDefaultValue(DateTime.Now);
+            //    entity.Property(s => s.CreatedDate)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.DateTime.ToString())
+            //          .HasDefaultValue(DateTime.Now);
 
-                entity.Property(s => s.CreatedBy)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.CreatedBy)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.ModifiedDate)
-                      .HasColumnType(SqlDbType.DateTime.ToString());
+            //    entity.Property(s => s.ModifiedDate)
+            //          .HasColumnType(SqlDbType.DateTime.ToString());
 
-                entity.Property(s => s.ModifiedBy)
-                      .HasColumnType(SqlDbType.Int.ToString());
-                entity.Property(s => s.Capacity)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.ModifiedBy)
+            //          .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.Capacity)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-            });
+            //});
 
-            modelBuilder.Entity<DecompositionShelves>(entity =>
-            {
-                entity.ToTable("DecompositionShelves");
+            //modelBuilder.Entity<DecompositionShelves>(entity =>
+            //{
+            //    entity.ToTable("DecompositionShelves");
 
-                entity.Property(s => s.Id)
-                      .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.Id)
+            //          .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.HasKey(s => s.Id);
+            //    entity.HasKey(s => s.Id);
 
-                entity.Property(s => s.CreatedDate)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.DateTime.ToString())
-                      .HasDefaultValue(DateTime.Now);
+            //    entity.Property(s => s.CreatedDate)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.DateTime.ToString())
+            //          .HasDefaultValue(DateTime.Now);
 
-                entity.Property(s => s.CreatedBy)
-                      .IsRequired()
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.CreatedBy)
+            //          .IsRequired()
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.ModifiedDate)
-                      .HasColumnType(SqlDbType.DateTime.ToString());
+            //    entity.Property(s => s.ModifiedDate)
+            //          .HasColumnType(SqlDbType.DateTime.ToString());
 
-                entity.Property(s => s.ModifiedBy)
-                      .HasColumnType(SqlDbType.Int.ToString());
+            //    entity.Property(s => s.ModifiedBy)
+            //          .HasColumnType(SqlDbType.Int.ToString());
 
-                entity.Property(s => s.DecompositionShelfId)
-                      .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+            //    entity.Property(s => s.DecompositionShelfId)
+            //          .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
 
-                entity.Property(s => s.Description)
-                      .HasColumnType(SqlDbType.NVarChar.ToString())
-                      .HasMaxLength(250);
+            //    entity.Property(s => s.Description)
+            //          .HasColumnType(SqlDbType.NVarChar.ToString())
+            //          .HasMaxLength(250);
 
-                entity.HasOne(s => s.DecompositionShelfs)
-                      .WithMany(s => s.DecompositionShelves)
-                      .HasForeignKey(s => s.DecompositionShelfId);
-                //.HasConstraintName("fk_Decomposition_DecompositionShelfId");
-            });
+            //    entity.HasOne(s => s.DecompositionShelfs)
+            //          .WithMany(s => s.DecompositionShelves)
+            //          .HasForeignKey(s => s.DecompositionShelfId);
+            //    //.HasConstraintName("fk_Decomposition_DecompositionShelfId");
+            //});
 
             modelBuilder.Entity<Document>(entity =>
             {

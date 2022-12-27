@@ -80,7 +80,7 @@ namespace Wms.Integration.Business.Concrete
         {
             try
             {
-                return new SuccessDataResult<Item>(await itemDal.GetAsync(s => s.Code == code), CustomJObject.Instance.General.Get);
+                return new SuccessDataResult<Item>(await itemDal.GetAsync(s => s.Code == code), CustomJObject.Instance.Item.Get);
             }
             catch (Exception ex)
             {
@@ -93,7 +93,7 @@ namespace Wms.Integration.Business.Concrete
                     ProjectName = "Wms.Integration.Business",
                     Statu = "Error",
                 });
-                return new ErrorDataResult<Item>(null, CustomJObject.Instance.General.NotGet);
+                return new ErrorDataResult<Item>(null, CustomJObject.Instance.Item.NotGet);
             }
         }
 

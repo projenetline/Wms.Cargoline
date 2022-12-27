@@ -58,6 +58,27 @@ namespace Wms.Integration.Business.Concrete
             }
         }
 
+        public async Task<IDataResult<SysAddress>> GetAddressAsync(string address)
+        {
+            try
+            {
+                return new SuccessDataResult<SysAddress>(await sysAddressDal.GetAsync(s => s.Address == address), CustomJObject.Instance.General.Get);
+            }
+            catch (Exception ex)
+            {
+                await loggerDal.CreateAsync(new Logger
+                {
+                    CreatedDate = DateTime.Now,
+                    Message1 = ex.Message,
+                    Message2 = ex.InnerException == null ? "" : ex.InnerException.Message,
+                    MethodName = "SysAddressManager.GetAddressAsync",
+                    ProjectName = "Wms.Integration.Business",
+                    Statu = "Error",
+                });
+                return new ErrorDataResult<SysAddress>(null, CustomJObject.Instance.General.NotGet);
+            }
+        }
+
         public async Task<IDataResult<SysAddress>> GetAsync(int id)
         {
             try

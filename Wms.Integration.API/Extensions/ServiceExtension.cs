@@ -55,6 +55,7 @@ namespace Wms.Integration.API.Extensions
             builder.AddScoped<IShipmentAddressService, ShipmentAddressManager>();
             builder.AddScoped<IShipmentDayService, ShipmentDayManager>();
             builder.AddScoped<ISlipService, SlipManager>();
+            builder.AddScoped<ISlipLineService, SlipLineManager>();
             builder.AddScoped<ISysAddressService, SysAddressManager>();
             builder.AddScoped<ISysAuthCodeService, SysAuthCodeManager>();
             builder.AddScoped<ISysBlockingExceptionService, SysBlockingExceptionManager>();
@@ -82,6 +83,7 @@ namespace Wms.Integration.API.Extensions
             builder.AddScoped<ISysPasswordHistoryService, SysPasswordHistoryManager>();
             builder.AddScoped<ISysPasswordPolicyService, SysPasswordPolicyManager>();
             builder.AddScoped<ISysPrinterService, SysPrinterManager>();
+            builder.AddScoped<IPurchaseService, PurchaseOrderManager>();
             builder.AddScoped<ISysRoleService, SysRoleManager>();
             builder.AddScoped<ISysScriptService, SysScriptManager>();
             builder.AddScoped<ISysSessionService, SysSessionManager>();
@@ -145,6 +147,7 @@ namespace Wms.Integration.API.Extensions
             builder.AddScoped<IShipmentAddressDal, EfShipmentAddressDal>();
             builder.AddScoped<IShipmentDayDal, EfShipmentDayDal>();
             builder.AddScoped<ISlipDal, EfSlipDal>();
+            builder.AddScoped<ISlipLineDal, EfSlipLineDal>();
             builder.AddScoped<ISysAddressDal, EfSysAddressDal>();
             builder.AddScoped<ISysAuthCodeDal, EfSysAuthCodeDal>();
             builder.AddScoped<ISysBlockingExceptionDal, EfSysBlockingExceptionDal>();

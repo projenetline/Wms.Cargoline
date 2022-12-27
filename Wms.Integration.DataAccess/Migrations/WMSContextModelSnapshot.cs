@@ -22,6 +22,76 @@ namespace Wms.Integration.DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.OperationClaim", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("Int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("NVarChar");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OperationClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("Int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("NVarChar");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("NVarChar");
+
+                    b.Property<byte[]>("PasswordHash")
+                        .HasColumnType("VarBinary");
+
+                    b.Property<byte[]>("PasswordSalt")
+                        .HasColumnType("VarBinary");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("Bit");
+
+                    b.Property<string>("UserName")
+                        .HasColumnType("NVarChar");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users", (string)null);
+                });
+
+            modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.UserOperationClaim", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("Int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("OperationClaimId")
+                        .HasColumnType("Int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("Int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OperationClaimId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserOperationClaims", (string)null);
+                });
+
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.AddressItem", b =>
                 {
                     b.Property<int>("Id")
@@ -342,6 +412,69 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.ToTable("Container", (string)null);
                 });
 
+            modelBuilder.Entity("Wms.Integration.Entities.Concrete.CTag", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ArpCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CarrierId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Desi")
+                        .HasColumnType("float");
+
+                    b.Property<string>("DocumentNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("PackageAmount")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("PaletShippingChange")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("Palette")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PrinterId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ShippingDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SlipAmount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagAmount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CarrierId");
+
+                    b.HasIndex("PrinterId");
+
+                    b.ToTable("CTag");
+                });
+
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.Decomposition", b =>
                 {
                     b.Property<Guid>("Id")
@@ -408,6 +541,8 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.HasIndex("DecompositionShelvesId");
 
                     b.HasIndex("OrderSlipLineId");
+
+                    b.HasIndex("SlipLineId");
 
                     b.ToTable("DecompositionLine");
                 });
@@ -6555,6 +6690,25 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.ToTable("WorkOrderLine", (string)null);
                 });
 
+            modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.UserOperationClaim", b =>
+                {
+                    b.HasOne("Wms.Integration.Core.Entities.Concrete.OperationClaim", "OperationClaim")
+                        .WithMany("UserOperationClaims")
+                        .HasForeignKey("OperationClaimId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Wms.Integration.Core.Entities.Concrete.User", "User")
+                        .WithMany("OperationClaims")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("OperationClaim");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.AddressItem", b =>
                 {
                     b.HasOne("Wms.Integration.Entities.Concrete.SysAddress", "Address")
@@ -6595,6 +6749,25 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.Navigation("ContainerType");
                 });
 
+            modelBuilder.Entity("Wms.Integration.Entities.Concrete.CTag", b =>
+                {
+                    b.HasOne("Wms.Integration.Entities.Concrete.Carrier", "Carrier")
+                        .WithMany("CTags")
+                        .HasForeignKey("CarrierId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Wms.Integration.Entities.Concrete.SysPrinter", "Printer")
+                        .WithMany("CTags")
+                        .HasForeignKey("PrinterId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Carrier");
+
+                    b.Navigation("Printer");
+                });
+
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.Decomposition", b =>
                 {
                     b.HasOne("Wms.Integration.Entities.Concrete.DecompositionShelf", "DecompositionShelf")
@@ -6618,7 +6791,15 @@ namespace Wms.Integration.DataAccess.Migrations
                         .WithMany("DecompositionLines")
                         .HasForeignKey("OrderSlipLineId");
 
+                    b.HasOne("Wms.Integration.Entities.Concrete.SlipLine", "SlipLine")
+                        .WithMany()
+                        .HasForeignKey("SlipLineId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("DecompositionShelves");
+
+                    b.Navigation("SlipLine");
                 });
 
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.DecompositionShelves", b =>
@@ -8380,6 +8561,16 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.Navigation("Warehouse2");
                 });
 
+            modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.OperationClaim", b =>
+                {
+                    b.Navigation("UserOperationClaims");
+                });
+
+            modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.User", b =>
+                {
+                    b.Navigation("OperationClaims");
+                });
+
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.Arp", b =>
                 {
                     b.Navigation("OrderSlipArps");
@@ -8419,6 +8610,8 @@ namespace Wms.Integration.DataAccess.Migrations
 
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.Carrier", b =>
                 {
+                    b.Navigation("CTags");
+
                     b.Navigation("OrderSlips");
                 });
 
@@ -8816,6 +9009,8 @@ namespace Wms.Integration.DataAccess.Migrations
 
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.SysPrinter", b =>
                 {
+                    b.Navigation("CTags");
+
                     b.Navigation("SysUsers");
                 });
 

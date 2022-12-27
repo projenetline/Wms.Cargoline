@@ -1489,6 +1489,10 @@
       "PackagePath": "staticwebassets\\assets\\skins\\yellow.min.css"
     },
     {
+      "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\wwwroot\\css\\mvc-grid\\fonts\\grid-glyphs.woff",
       "PackagePath": "staticwebassets\\css\\mvc-grid\\fonts\\grid-glyphs.woff"
     },

@@ -1,9 +1,6 @@
 ﻿using Wms.Integration.Business.Abstract;
-using Wms.Integration.Core.Core.Abstract;
 using Wms.Integration.Core.DataAccess.Utilities.Results;
-using Wms.Integration.Core.Entities.Abstract;
 using Wms.Integration.DataAccess.Abstract;
-using Wms.Integration.DataAccess.Concrete;
 using Wms.Integration.Entities.Concrete;
 using Wms.Integration.Entities.JsonObjects;
 
@@ -84,7 +81,7 @@ namespace Wms.Integration.Business.Concrete
         {
             try
             {
-                return new SuccessDataResult<ItemUnit>(await itemUnitDal.GetAsync(s => s.ItemId == itemId), CustomJObject.Instance.General.Get);
+                return new SuccessDataResult<ItemUnit>(await itemUnitDal.GetAsync(s => s.ItemId == itemId), CustomJObject.Instance.ItemUnit.Get);
             }
             catch (Exception ex)
             {
@@ -97,7 +94,7 @@ namespace Wms.Integration.Business.Concrete
                     ProjectName = "Wms.Integration.Business",
                     Statu = "Error",
                 });
-                return new ErrorDataResult<ItemUnit>(null, CustomJObject.Instance.General.NotGet);
+                return new ErrorDataResult<ItemUnit>(null, CustomJObject.Instance.ItemUnit.NotGet);
             }
         }
 

@@ -18,17 +18,21 @@
 <body>
     <div class="center">
         <h1 style="padding:0px 0px 30px 0px;">Hoşgeldiniz</h1>
-        <form method="post">
+        <form method="post" asp-area="" asp-controller="Admin" asp-action="Login">
             <div class="txt_field">
-                <input type="text"  required/>
+                <input type="text" name="UserName"  required/>
                 <span></span>
                 <label>Kullanıcı adı</label>
             </div>
             <div class="txt_field">
-                <input type="text" required/>
+                <input type="password" name="Password" required />
                 <span></span>
                 <label>Şifre</label>
             </div>
+            @if (TempData["msg"] != null)
+            {
+                <p style="color:red" class="errorMessage">@TempData["msg"]</p>
+            }
             <div class="pass">Şifremi unuttum?</div>
             <input type="submit" value="Giriş Yap" />
             <div class="signup_link">

@@ -31,15 +31,42 @@ namespace Wms.Integration.Entities.JsonObjects
         }
 
         private JMessage general;
+        private JMessage address;
         private JMessage addressItem;
         private JMessage arp;
         private JMessage warehouse;
+        private JMessage item;
+        private JMessage itemUnit;
         public JMessage WareHouse
         {
             get => warehouse ?? (warehouse = new JMessage
             {
                 Get="Depo başarı ile getirildi...",
                 NotGet = "Deponuz bulunamadı!",
+            });
+        }
+        public JMessage Item
+        {
+            get => item ?? (item = new JMessage
+            {
+                Get = "Ürün başarı ile getirildi...",
+                NotGet = "Ürün bulunamadı!",
+            });
+        }
+        public JMessage Address
+        {
+            get => address ?? (address = new JMessage
+            {
+                Get = "Adres başarı ile getirildi...",
+                NotGet = "Adres bulunamadı!",
+            });
+        }
+        public JMessage ItemUnit
+        {
+            get => itemUnit ?? (itemUnit = new JMessage
+            {
+                Get = "Ürün birimi başarı ile getirildi...",
+                NotGet = "Ürün birimi bulunamadı!",
             });
         }
         public JMessage General

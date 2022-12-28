@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Wms.Integration.DataAccess.Concrete.Contexts;
+using static Microsoft.AspNetCore.Identity.UI.V4.Pages.Account.Internal.LoginModel;
 
 namespace Wms.Integration.WebUI.Controllers
 {
@@ -16,12 +18,12 @@ namespace Wms.Integration.WebUI.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Index(ApplicationUser user)
+        public async Task<IActionResult> Index(InputModel user)
         {
             Microsoft.AspNetCore.Identity.SignInResult result;
             if (ModelState.IsValid)
             {
-                result = await signInManager.PasswordSignInAsync(user.UserName, user.Password, true, true);
+                result = await signInManager.PasswordSignInAsync(user.Password, user.Password, true, true);
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index", "Dashboard");

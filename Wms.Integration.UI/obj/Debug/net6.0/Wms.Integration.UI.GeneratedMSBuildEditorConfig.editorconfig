@@ -5,177 +5,176 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Wms.Integration.UI
 build_property.RootNamespace = Wms.Integration.UI
-build_property.ProjectDir = C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.UI\
+build_property.ProjectDir = C:\GitHup\Wms.Cargoline\Wms.Integration.UI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\netli\Documents\Wms.Cargoline\Wms.Integration.UI
+build_property.MSBuildProjectDirectory = C:\GitHup\Wms.Cargoline\Wms.Integration.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/ForgotPassword.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/Login.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/Logout.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/Register.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/ResetPassword.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/ResetPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Account/_ViewImports.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/BlockDefinition/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/BlockDefinition/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvY2tEZWZpbml0aW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/DecomPosition/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/DecomPosition/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVjb21Qb3NpdGlvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/Block.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/Block.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCbG9jay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/DashBoard.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/DashBoard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEYXNoQm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/Decomposition.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/Decomposition.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZWNvbXBvc2l0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/DETER.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/DETER.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxERVRFUi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/Privacy.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/Shelf.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/Shelf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaGVsZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/ShippingList.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/ShippingList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaGlwcGluZ0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/StartShipping.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/StartShipping.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFydFNoaXBwaW5nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/TagEdit.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/TagEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYWdFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/TagList.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/TagList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYWdMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Home/ToReturn.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Home/ToReturn.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUb1JldHVybi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Components/StartShippingComp/Default.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Components/StartShippingComp/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcU3RhcnRTaGlwcGluZ0NvbXBcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Components/TagEditComp/Default.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Components/TagEditComp/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnRWRpdENvbXBcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Components/TagListComp/Default.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Components/TagListComp/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVGFnTGlzdENvbXBcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Error.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/MvcGrid/_Grid.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/MvcGrid/_Grid.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE12Y0dyaWRcX0dyaWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/MvcGrid/_Pager.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/MvcGrid/_Pager.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE12Y0dyaWRcX1BhZ2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_LoginPartial.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_ViewImports.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3SW1wb3J0cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_ViewStart.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WaWV3U3RhcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/ShippingList/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/ShippingList/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hpcHBpbmdMaXN0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/StartShipping/CustomShipping.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/StartShipping/CustomShipping.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRTaGlwcGluZ1xDdXN0b21TaGlwcGluZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/StartShipping/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/StartShipping/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnRTaGlwcGluZ1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/TagEdit/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/TagEdit/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnRWRpdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/TagList/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/TagList/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFnTGlzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/ToReturn/Index.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/ToReturn/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVG9SZXR1cm5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/_ViewImports.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/_ViewStart.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_Layout.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rcb4srds2g
 
-[C:/Users/netli/Documents/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_UserLayout.cshtml]
+[C:/GitHup/Wms.Cargoline/Wms.Integration.UI/Views/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-4npbbkahna

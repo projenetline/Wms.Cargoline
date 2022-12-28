@@ -15,9 +15,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 builder.Services.AddRazorPages();
 
-builder.Services.AddIdentity<ApplicationUser,ApplicationRole>()//options => options.SignIn.RequireConfirmedAccount = true
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
+builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
+           .AddEntityFrameworkStores<ApplicationDbContext>()
+           .AddDefaultUI()
+           .AddDefaultTokenProviders();
+
 builder.Services.UseService();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.Configure<IdentityOptions>(options =>

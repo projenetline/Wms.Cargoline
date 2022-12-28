@@ -24,18 +24,19 @@ namespace Wms.Integration.WebUI.Controllers
         {
             if(ModelState.IsValid)
             {
-                return View(model);
+                var result = await userAuthenticationService.LoginAsync(model);
+                if (result.Result)
+                {
+                    return RedirectToAction("Index", "Dashboard");
+                }
+                else
+                {
+                    TempData["msg"] = result.Message;
+                    return RedirectToAction(nameof(Login));
+                }
+                
             }
-            var result =await userAuthenticationService.LoginAsync(model);
-            if (result.Result)
-            {
-                return RedirectToAction("Index", "Dashboard");
-            }
-            else
-            {
-                TempData["msg"] = result.Message;
-                return RedirectToAction(nameof(Login));
-            }
+            return View(model);
         }
 
         [Authorize]
@@ -59,12 +60,13 @@ namespace Wms.Integration.WebUI.Controllers
         {
             if(ModelState.IsValid) 
             {
-                return View(model);
+                model.Role = "user";
+                var result = await userAuthenticationService.RegistrationAsync(model);
+                TempData["msg"] = result.Message;
+                return RedirectToAction(nameof(Registration));
+              
             }
-            model.Role = "user";
-            var result=await userAuthenticationService.RegistrationAsync(model);
-            TempData["msg"]=result.Message;
-            return RedirectToAction(nameof(Registration));
+            return View(model);
         }
         public  async Task<IActionResult> Rec()
         {

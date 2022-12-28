@@ -20,32 +20,33 @@
         <h1 style="padding:0px 0px 30px 0px;">Kayıt ol</h1>
         <form method="post">
             <div class="txt_field">
-                <input type="text" required />
+             
+                @Html.TextBoxFor(model => model.UserName,new { @type="text" ,@required="required"})
                 <span></span>
                 <label>Kullanıcı adı</label>
             </div>
             <div class="txt_field">
-                <input type="text" required />
+                @Html.TextBoxFor(model => model.Email,new { @type="mail" ,@required="required"})
                 <span></span>
                 <label>Email</label>
             </div>
              <div class="txt_field">
-                <input type="text" required />
+                @Html.TextBoxFor(model => model.Password,new { @type="password" ,@required="required"})
                 <span></span>
                 <label>Şifre</label>
             </div>
              <div class="txt_field">
-                <input type="text" required />
+                @Html.TextBoxFor(model => model.Password,new { @type="password" ,@required="required"})
                 <span></span>
                 <label>Şifre Tekrarı</label>
             </div>
              <div class="txt_field">
-                <input type="text" required />
+                @Html.TextBoxFor(model => model.FirstName,new { @type="text" ,@required="required"})
                 <span></span>
                 <label>Adı</label>
             </div>
             <div class="txt_field">
-                <input type="text" required />
+                @Html.TextBoxFor(model => model.LastName,new { @type="text" ,@required="required"})
                 <span></span>
                 <label>Soyadı</label>
             </div>

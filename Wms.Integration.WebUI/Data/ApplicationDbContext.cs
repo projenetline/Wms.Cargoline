@@ -5,7 +5,7 @@ using Wms.Integration.DataAccess.Concrete.Contexts;
 
 namespace Wms.Integration.WebUI.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)

@@ -8668,12 +8668,11 @@
       ]
     },
     "System.ComponentModel/4.3.0": {
-      "sha512": "VyGn1jGRZVfxnh8EdvDCi71v3bMXrsu8aYJOwoV7SNDLVhiEqwP86pPMyRGsDsxhXAm2b3o9OIqeETfN5qfezw==",
+      "sha512": "yd6k0xP2sfntH+6AEQQz8d4sGBBD3pOrMFfmQWYsKTXRBaA2VOumQFj1+qEmEs4F18eJYin03qlcsWq1W5m8Qg==",
       "type": "package",
       "path": "system.componentmodel/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11394,12 +11393,11 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "sha512": "yFYgQduqeCFCGQNWbS5/Q5rUQFY30XlYGisgiS1LlLFB1C/kXRr+IwIxjup1TVZ4ok/ZvJfHzhc5AbvTVH1ytg==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11496,12 +11494,11 @@
       ]
     },
     "System.Security.Claims/4.3.0": {
-      "sha512": "P/+BR/2lnc4PNDHt/TPBAWHVMLMRHsyYZbU1NphW4HIWzCggz8mJbTQQ3MKljFE7LS3WagmVFuBgoLcFzYXlkA==",
+      "sha512": "o2kq762NYUO8xlXFlfSmASXjlEKizHljVeRmNtwy6VDKpUTEeYjkFpnvDrofxh5hzPYkwn6PAdh+f78vb9Z/Gg==",
       "type": "package",
       "path": "system.security.claims/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -11945,12 +11942,11 @@
       ]
     },
     "System.Security.Principal/4.3.0": {
-      "sha512": "I1tkfQlAoMM2URscUtpcRo/hX0jinXx6a/KUtEQoz3owaYwl3qwsO8cbzYVVnjxrzxjHo3nJC+62uolgeGIS9A==",
+      "sha512": "NKoNlji/PMrAdqeDm+lBqZEOKyHAahVz2YiX4g8rFM3aKxyDeknGqsXkF1Szp2YfPEwvN3Aj5s28pSd356U4hQ==",
       "type": "package",
       "path": "system.security.principal/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12628,12 +12624,11 @@
       ]
     },
     "System.Threading.Thread/4.3.0": {
-      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
+      "sha512": "mSsZ1RKCMf/VyhkfTXGDV9t63pz4zG83ed6dY5guvu/sDkixRn517c1OI+7E0Ht8bNFxnqhspeIiAreMmtum6Q==",
       "type": "package",
       "path": "system.threading.thread/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -12916,23 +12911,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\netli\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
+      "projectUniqueName": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
       "projectName": "Wms.Integration.UI",
-      "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
-      "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.UI\\obj\\",
+      "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -12948,8 +12945,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
-              "projectPath": "C:\\Users\\netli\\Documents\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj"
+            "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
+              "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj"
             }
           }
         }
@@ -13039,7 +13036,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

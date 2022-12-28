@@ -48,6 +48,7 @@ namespace Wms.Integration.WebUI.Services.Concrete
                 {
                     authclaims.Add(new Claim(ClaimTypes.Role, userRole));
                 }
+                resultViewModel.Result = true;
             }
             else if(signInResult.IsLockedOut)
             {
@@ -80,22 +81,22 @@ namespace Wms.Integration.WebUI.Services.Concrete
                 resultViewModel.Data = userExits;
                 return resultViewModel;
             }
-            userExits = new ApplicationUser
-            {
-                SecurityStamp = Guid.NewGuid().ToString(),
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                Email = model.Email,
-                UserName = model.UserName,
-                Password = model.Password,
-                EmailConfirmed = true,
-            };
-           IdentityResult result= await userManager.CreateAsync(userExits);
+            var user = new ApplicationUser { Id = Guid.NewGuid().ToString(),  UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName  };
+            IdentityResult result= await userManager.CreateAsync(user, model.Password);
            if(result.Succeeded)
            {
                 if(!await roleManager.RoleExistsAsync(model.Role))
                 {
-                    await roleManager.CreateAsync(new ApplicationRole(model.Role,""));
+                    ApplicationRole role = new ApplicationRole()
+                    {
+                        Description = model.Role,
+                        ConcurrencyStamp = Guid.NewGuid().ToString(),
+                        Name = model.Role,
+                        Id = Guid.NewGuid().ToString()
+
+                    };
+
+                    await roleManager.CreateAsync(role);
                 }
                 if(await roleManager.RoleExistsAsync(model.Role))
                 {

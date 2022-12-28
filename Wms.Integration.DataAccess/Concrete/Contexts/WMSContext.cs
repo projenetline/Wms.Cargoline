@@ -35,7 +35,6 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         public virtual DbSet<FormLayout> FormLayouts { get; set; }
         public virtual DbSet<History> Histories { get; set; }
         public virtual DbSet<HistoryDetail> HistoryDetails { get; set; }
-        public virtual DbSet<HttpLogger> HttpLoggers { get; set; }
         public virtual DbSet<Item> Items { get; set; }
         public virtual DbSet<ItemClassRelation> ItemClassRelations { get; set; }
         public virtual DbSet<ItemContent> ItemContents { get; set; }
@@ -45,7 +44,6 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         public virtual DbSet<ItemTotalsView> ItemTotalsViews { get; set; }
         public virtual DbSet<ItemTrackingTotalsView> ItemTrackingTotalsViews { get; set; }
         public virtual DbSet<ItemUnit> ItemUnits { get; set; }
-        public virtual DbSet<Logger> Loggers { get; set; }
         public virtual DbSet<LoginHistory> LoginHistories { get; set; }
         public virtual DbSet<OrderSlip> OrderSlips { get; set; }
         public virtual DbSet<OrderSlipLine> OrderSlipLines { get; set; }
@@ -111,7 +109,7 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=192.168.16.3;Database=OCAK2023;user id=sa;password=Deneme123");
+                optionsBuilder.UseSqlServer("Server=192.168.7.252;Database=WMSAPI;user id=sa;password=net_123");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

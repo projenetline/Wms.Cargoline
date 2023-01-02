@@ -3,7 +3,7 @@
   padding: 0.429rem 1rem;
   font-size: 1rem;
   line-height: 1.57142857;
-  color: #76838f;
+  color: black;
   background-color: #fff;
   background-image: none;
   border: 1px solid #e4eaec;
@@ -92,7 +92,7 @@ select.bs-select-hidden, select.selectpicker {
   padding: 0.572rem 1.072rem;
   font-weight: normal;
   line-height: 1.57142857;
-  color: #76838f;
+  color: black;
   white-space: nowrap;
   border-radius: 0.215rem;
   transition: background-color .25s; }

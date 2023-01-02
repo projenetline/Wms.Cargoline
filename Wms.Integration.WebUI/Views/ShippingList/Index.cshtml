@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="col-xxl-12 col-lg-12">
+    <div class="card card-shadow" id="widgetStackedBar">
+        <div class="card-block p-0">
+            <h4 class="example-title" style="text-align:center; font-size:1.5rem; margin-top:50px!important"><span class="label label-primary">Sevkiyat Listesi</span></h4>
+            <br />
+
+            <div id="ShipmentListViewTable"></div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="OrderlistModal" aria-hidden="false" aria-labelledby="exampleFillIn" data-keyboard="false" data-backdrop="static"  role="dialog" tabindex="-1">
+    <div class="modal-dialog modal-simple modal-lg">
+        <div class="modal-content" style="width:90%;">
+            <div class="modal-header">
+                @Html.Hidden("txtOrderId","0")
+                <h4 class="modal-title" id="OrderlistModalTitle">  </h4>
+            </div>
+            <div class="modal-body" style="background-color:white">
+                <div class="panel-body">
+                    <table class="table table-hover dataTable table-bordered table-striped w-full" id="orderlistTable">
+                        <thead >
+                            <tr>
+                                <th>
+
+                                </th>
+                                <th>
+                                    Sipariş Tarihi
+                                </th>
+                                <th>
+                                    Sipariş No
+                                </th>
+                                <th>
+                                    Cari Unvan
+                                </th>
+                            </tr>
+                            
+                            
+                        </thead>
+                        <tbody id="orderlistTableBody">
+
+
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" data-dismiss="modal" class="btn btn-warning">Vazgeç</button>
+                <button type="button" onclick="NotSelectOrders()" class="btn btn-primary">Başka Sipariş Seçme</button>
+                <button type="button" onclick="SelectOrders()" class="btn btn-success">Seç</button>
+            </div>
+        </div>
+    </div>
+</div>

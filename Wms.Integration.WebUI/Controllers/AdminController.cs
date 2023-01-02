@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Wms.Integration.DataAccess.Concrete.Contexts;
 using Wms.Integration.WebUI.Models;
 using Wms.Integration.WebUI.Services.Abstract;
 using Wms.Integration.WebUI.Services.Concrete;
@@ -9,9 +11,11 @@ namespace Wms.Integration.WebUI.Controllers
     public class AdminController : Controller
     {
         private readonly IUserAuthenticationService userAuthenticationService;
-        public AdminController(IUserAuthenticationService userAuthenticationService)
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        public AdminController(IUserAuthenticationService userAuthenticationService, SignInManager<ApplicationUser> signInManager)
         {
             this.userAuthenticationService = userAuthenticationService;
+            _signInManager = signInManager;
         }
         [HttpGet]
         public IActionResult Login()
@@ -27,7 +31,7 @@ namespace Wms.Integration.WebUI.Controllers
                 var result = await userAuthenticationService.LoginAsync(model);
                 if (result.Result)
                 {
-                    return RedirectToAction("Index", "Dashboard");
+                    return RedirectToAction("Index", "ShippingList");
                 }
                 else
                 {
@@ -83,6 +87,11 @@ namespace Wms.Integration.WebUI.Controllers
             var result=await userAuthenticationService.RegistrationAsync(model);
             return Ok(result);
         }
+
+
+
+  
+
 
     }
 }

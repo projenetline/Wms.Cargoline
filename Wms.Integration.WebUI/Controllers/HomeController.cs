@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Wms.Integration.WebUI.Models;
 
+
 namespace Wms.Integration.WebUI.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -20,19 +22,8 @@ namespace Wms.Integration.WebUI.Controllers
         {
             return View();
         }
-        [HttpPost]
-        //[WebMethod(EnableSession = true)]
-        //[ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public IActionResult Privacy(int numberId)
+        public IActionResult Privacy()
         {
-            //bool result = false;
-            //sakjdakshdjas
-            //    if ()
-            //{
-            //    result true;
-            //}
-
-            //return Json(result,JsonRequestBehavior.AllowGet);
             return View();
         }
         public IActionResult Block()

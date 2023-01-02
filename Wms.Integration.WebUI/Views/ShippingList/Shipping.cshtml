@@ -1,0 +1,322 @@
+﻿@model Wms.Integration.Entities.Dtos.Shipments.ShippingModel
+@{
+    ViewData["Title"] = "Sipariş Detayı";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    // Views_Administration_ListRoles listRoles =
+}
+<style>
+    .tableInput {
+        color: black;
+        background-color: #f9f5f3 !Important;
+    }
+
+</style>
+@using (Html.BeginForm("Shipping", "ShippingList", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal" }))
+{
+
+    @Html.HiddenFor(model => model.TotalAmount)
+
+
+    for (int i = 0; i < Model.OrderIdList.Count; i++)
+    {
+        @Html.HiddenFor(model => Model.OrderIdList[i])
+    }
+
+
+    <div class="col-md-12">
+        <div class="panel panel-bordered">
+            <div class="panel-body" style="padding-bottom:0px;padding-top:0px">
+                <div class="row ">
+
+
+
+                    <div class="col-md-4">
+
+                        <div class="example-wrap" style="margin-bottom:0px !Important">
+                            <div class="example">
+
+
+                                <div class="form-group row">
+
+                                    <label style="font-weight:400" class="col-md-3 form-control-label">Sipariş No: </label>
+
+                                    <div class="col-md-3">
+                                        @Html.TextBoxFor(model => model.OrderNr, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off"  ,@readonly="readonly",@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                    <label style="font-weight:400" class=" col-md-3 form-control-label">Tarih: </label>
+
+                                    <div class="col-md-3">
+                                        @Html.TextBoxFor(model => model.Date, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off"  ,@readonly="readonly",@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+
+                                    <label style="font-weight:400" class=" col-md-3 form-control-label">Miktar : </label>
+
+                                    <div class="col-md-9">
+                                        @Html.TextBoxFor(model => model.Amount, new { @class = "form-control form-control-lg", @type = "number",@autocomplete="off"   ,@style="border:2px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+
+                                    <label style="font-weight:400" class=" col-md-3 form-control-label">Barkod : </label>
+
+                                    <div class="col-md-9">
+                                        @Html.TextBoxFor(model => model.Barcode, new { @class = "form-control form-control-lg ", @type = "text",@autocomplete="off"  ,@style="border:2px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-md-8">
+
+
+                        <div class="example-wrap">
+                            <div class="example">
+                                <div class="form-group row">
+
+                                    <label class=" col-md-4 form-control-label">Firma: </label>
+
+                                    <div class="col-md-2">
+                                        @Html.TextBoxFor(model => model.ClCode, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off" ,@readonly="readonly" ,@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                    <div class="col-md-6">
+                                        @Html.TextBoxFor(model => model.ClDefintion, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off"  ,@readonly="readonly",@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+
+                                    <label class="col-md-4 form-control-label">Adres: </label>
+
+                                    <div class="col-md-8">
+                                        @Html.TextBoxFor(model => model.Address1, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off"  ,@readonly="readonly",@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+
+                                    <label class="col-md-4 form-control-label"> </label>
+
+                                    <div class="col-md-8">
+                                        @Html.TextBoxFor(model => model.Address2, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off"  ,@readonly="readonly",@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+
+                                    <label class=" col-md-4 form-control-label">İl / İlçe: </label>
+
+                                    <div class="col-md-4">
+                                        @Html.TextBoxFor(model => model.City, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off" ,@readonly="readonly" ,@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                    <div class="col-md-4">
+                                        @Html.TextBoxFor(model => model.Town, new { @class = "form-control form-control-sm", @type = "text",@autocomplete="off"  ,@readonly="readonly",@style="border:1px solid gray;color:black;font-weight:400"})
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-xxl-12">
+
+        <!-- Panel Custom View -->
+        <div class="panel " id="custom_view">
+            <div class="panel-body">
+                <table class="table table-hover dataTable table-striped w-full" id="ShipmentTable">
+                    <thead>
+                        <tr>
+                            <th width="15%" style="padding=0">Barkod</th>
+                            <th width="10%" style="padding=0">Stok Kodu</th>
+                            <th width="25%" style="padding=0">Stok Adı</th>
+                            <th width="10%" style="padding=0">Lot Numarası</th>
+                            <th width="10%" style="padding=0">Birim</th>
+                            <th width="10%" style="padding=0">Sipariş Miktarı</th>
+                            <th width="10%" style="padding=0">Sevk Edilen</th>
+                            <th width="10%" style="padding=0">Kalan</th>
+
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @for (int i = 0; i < Model.Items.Count; i++)
+                        {
+                            <tr>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].Barcode, new {@class="form-control form-control-sm tableInput"  ,@readonly="readonly"  })
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].ItemCode, new {@class="form-control form-control-sm tableInput"  ,@readonly="readonly" })
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].ItemName, new {@class="form-control form-control-sm tableInput"  ,@readonly="readonly" })
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].LotNr, new {@class="form-control form-control-sm tableInput"  ,@readonly="readonly" })
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].UnitCode, new {@class="form-control form-control-sm tableInput"  ,@readonly="readonly"})
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].OrderAmount, new {@class="form-control form-control-sm tableInput" ,@readonly="readonly", @style="text-align:center"  })
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].Shipped, new {@class="form-control form-control-sm  tableInput" ,@readonly="readonly" , @style="text-align:center" })
+                                </td>
+                                <td style="padding:0">
+                                    @Html.TextBoxFor(model => Model.Items[i].LeftAmount, new {@class="form-control form-control-sm tableInput"  ,@readonly="readonly", @style="text-align:center" })
+                                </td>
+
+
+                            </tr>
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-xxl-12">
+        <div class="panel " id="custom_view">
+            <div class="panel-body">
+                <div class="col-md-12">
+                    <div class="row ">
+                        <div class="col-md-4">
+                            <button disabled type="button" id="btnCompleteShipment" data-target="#shippingPrintModel" data-toggle="modal" class="btn btn-success"><i class="icon fa-save" aria-hidden="true"></i>Sevkiyat Tamamla</button>
+                            <button type="button" onclick="SetShippedAll()" class="btn btn-warning"><i class="icon fa-check" aria-hidden="true"></i>Tamamını İşaretle</button>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="txtTotalShipmentAmount" class="float-right" style="margin-top:5px;right:15px">Sevk Edilen Toplam Adet : 0 </h3>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="button" onclick="location.href='@Url.Action("Index", "ShippingList")'" class="btn btn-info float-right"><i class="icon fa-list" aria-hidden="true"></i>Sevkiyat Listesi</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+}
+@{
+    var labelInfo = Model.LabelInfo;
+
+}
+@using (Html.BeginForm("Shipping", "ShippingList", FormMethod.Post, new { enctype = "multipart/form-data", @class = "form-horizontal" }))
+{
+    <div class="modal" id="shippingPrintModel" aria-hidden="false" aria-labelledby="exampleFillIn" data-keyboard="false" data-backdrop="static" role="dialog" tabindex="-1">
+        <div class="modal-dialog modal-simple modal-lg">
+            <div class="modal-content" style="width:90%;">
+                <div class="modal-header">
+                    @Html.Hidden("txtOrderId","0")
+                    @Html.Hidden("City",Model.LabelInfo.City)
+                    @Html.Hidden("Address1",Model.LabelInfo.Address1)
+                    @Html.Hidden("Address2",Model.LabelInfo.Address2)
+                    @Html.Hidden("Town",Model.LabelInfo.Town)
+                    @Html.Hidden("ClDefintion",Model.LabelInfo.ClDefintion)
+                
+                    <h4 class="modal-title" id="OrderlistModalTitle">  </h4>
+                </div>
+                <div class="modal-body" style="background-color:white">
+                    <div class="panel-body">
+                        <div class="row">
+
+                            @for (int i = 0; i < labelInfo.OrderIdList.Count; i++)
+                            {
+                                @Html.Hidden("OrderIdList["+i+"]", labelInfo.OrderIdList[i], new {@id="OrderIdList_"+i+"_"})
+                            }
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label" for="OrderNr">Belge No:</label>
+
+
+                                @Html.TextBox("OrderNr", labelInfo.OrderNr, new {@id="OrderNr",Name="OrderNr", @class = "form-control" ,@autocomplete="off" , @type="text" ,@style="border:1px solid gray;color:black;font-weight:400"})
+
+
+                            </div>
+                            <div class=" col-md-4"></div>
+                            <div class="form-group col-md-4">
+                                <label class="form-control-label" for="inputBasicFirstName">Tarih:</label>
+                                @Html.TextBox("Date", labelInfo.Date, new {@id="Date",Name="Date", @class = "form-control" ,@autocomplete="off" , @type="text",@style="border:1px solid gray;color:black;font-weight:400" })
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label" for="LabelCount">Etiket Adedi:</label>
+
+                                @Html.TextBox("LabelCount", labelInfo.LabelCount, new {@id="LabelCount",Name="LabelCount", @class = "form-control" ,@autocomplete="off" , @type="number",@style="border:1px solid gray;color:black;font-weight:400" })
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label" for="BoxCount">Koli Adedi:</label>
+                                @Html.TextBox("BoxCount",labelInfo.BoxCount, new {@id="BoxCount",@Name="BoxCount", @class = "form-control" ,@autocomplete="off" , @type="number",@style="border:1px solid gray;color:black;font-weight:400" })
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label" for="Desi">Desi:</label>
+                                @Html.TextBox("Desi", labelInfo.Desi, new {@id="Desi",@Name="Desi", @class = "form-control" ,@autocomplete="off" , @type="number",@style="border:1px solid gray;color:black;font-weight:400" })
+                            </div>
+                        </div>
+                        <div class="row">
+
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label" for="InvoiceCount">Fatura Adedi:</label>
+                                @Html.TextBox("InvoiceCount", labelInfo.InvoiceCount, new {@id="InvoiceCount",@Name="InvoiceCount", @class = "form-control" ,@autocomplete="off" , @type="number",@style="border:1px solid gray;color:black;font-weight:400" })
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label class="form-control-label" for="PaletNr">Palet No:</label>
+                                @Html.TextBox("PaletNr", labelInfo.PaletNr, new {@id="PaletNr",@Name="PaletNr", @class = "form-control" ,@autocomplete="off" , @type="number" ,@style="border:1px solid gray;color:black;font-weight:400"})
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label class="form-control-label" for="Transporter">Taşıyıcı:</label>
+                                @Html.DropDownList("Transporter", new SelectList(ViewBag.TransporterSelectList, "Value", "Text", labelInfo.Transporter), "Taşıyıcı Seçiniz", new {@id="Transporter",@Name="Transporter",@data_plugin="selectpicker" , @class = "form-control" ,@style="border:1px solid gray;color:black;font-weight:400" })
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+
+                    <button class="btn btn-warning btn-outline" data-dismiss="modal" type="button">Vazgeç</button>
+                    <button class="btn btn-primary btn-outline" type="submit"> Yazdır</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

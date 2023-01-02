@@ -4,8 +4,17 @@ namespace Wms.Integration.WebUI.Controllers
 {
     public class TagEditController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Index(Guid id)
         {
+            if(id==Guid.Empty)
+            {
+
+            }
+            else
+            {
+
+            }
             return View();
         }
     }

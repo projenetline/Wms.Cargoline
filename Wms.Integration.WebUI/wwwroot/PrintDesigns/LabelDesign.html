@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML & CSS Avery Labels (5160) by MM at Boulder Information Services</title>
+    <link href="labels.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            width: 120mm;
+            height: 80mm;
+            font-family: Tahoma;
+            padding:3px 3px 3px 3px;
+        }
+
+        .label {
+            background-color: #fff;
+        }
+    </style>
+
+</head>
+<body>
+
+    <table style="border: 1px solid black; width: 135mm; height: 85mm;">
+        <tr>
+            <td colspan="2" style="vertical-align:top;width:60%">
+                <strong>ALICI:</strong><label>{client}</label>
+            </td>
+            <td style="vertical-align:top">
+                <strong>F.NO :</strong><label>{belgeno}</label>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" style="vertical-align: top; width: 60%">
+
+                <label>{adres1}</label><br />
+                <label>{adres2}</label>
+            </td>
+            <td style="vertical-align:top;text-align:center">
+                <img src="{firmLogo}" style="width: 200px; " />
+
+            </td>
+
+        </tr>
+        <tr>
+            <td colspan="2" style="vertical-align:top;text-align:right">
+                <strong>  {town} /  {city}</strong>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="vertical-align: middle; text-align: center; border: 1px solid black; text-align:">
+
+                <label>KOLİ : {koli} </label>
+            </td>
+            <td style="vertical-align: middle; text-align: center; border: 1px solid black">
+                <label>DESİ : {desi} </label>
+
+            </td>
+            <td style="vertical-align: middle; text-align: center; border: 1px solid black">
+                <label>{transporter}</label>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="border-top:1px solid black">
+
+                <img src="{barcode}" style="text-align: center; width: 300px;height:50px !important " />
+               
+
+            </td>
+            <td style="border: 1px solid black" >
+                <strong>
+                    {boxCount}
+                </strong>
+                <br />
+                <strong>
+                    {paletNr}
+                </strong>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+</body>
+</html>

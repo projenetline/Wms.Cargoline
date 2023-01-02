@@ -1,3 +1,6 @@
+using DinkToPdf.Contracts;
+using DinkToPdf;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Wms.Integration.DataAccess.Concrete.Contexts;
@@ -19,9 +22,13 @@ builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
            .AddEntityFrameworkStores<ApplicationDbContext>()
            .AddDefaultUI()
            .AddDefaultTokenProviders();
-
+builder.Services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 builder.Services.UseService();
+
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+
+
+builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<IdentityOptions>(options =>
 {
     // Password settings.
@@ -43,16 +50,25 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.User.RequireUniqueEmail = false;
 });
 
-builder.Services.ConfigureApplicationCookie(options =>
+builder.Services.AddAuthentication(options =>
 {
-    // Cookie settings
-    options.Cookie.HttpOnly = true;
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+}).AddCookie(options =>
+{
     options.ExpireTimeSpan = TimeSpan.FromDays(1);
-
+    options.Cookie.MaxAge = options.ExpireTimeSpan; // optional
+    options.SlidingExpiration = true;
     options.LoginPath = "/Admin/Login";
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
-    options.SlidingExpiration = true;
 });
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Admin/Login";
+
+    options.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+});
+
 
 var app = builder.Build();
 
@@ -78,7 +94,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Admin}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 app.MapRazorPages();
 
 app.Run();

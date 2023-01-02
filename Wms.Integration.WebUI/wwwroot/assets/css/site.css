@@ -425,7 +425,7 @@ body {
   background-color: #f1f4f5; }
 
 .page {
-  max-width: 1400px;
+
   margin: 0 auto;
   background: #f1f4f5;
   position: relative;
@@ -4734,7 +4734,7 @@ body.site-navbar-small {
 
 .panel-body {
   position: relative;
-  padding: 30px 30px; }
+  padding: 0px 30px; }
   .panel-body::after {
     display: block;
     clear: both;

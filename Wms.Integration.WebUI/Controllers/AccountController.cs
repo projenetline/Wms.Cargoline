@@ -26,7 +26,7 @@ namespace Wms.Integration.WebUI.Controllers
                 result = await signInManager.PasswordSignInAsync(user.Password, user.Password, true, true);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Dashboard");
+                    return RedirectToAction("Index", "ShippingList");
                 }
                 else
                 {

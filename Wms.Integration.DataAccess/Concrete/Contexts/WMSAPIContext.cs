@@ -22,6 +22,8 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
         public virtual DbSet<OperationClaim> OperationClaims { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public virtual DbSet<LabelHeader> LabelHeaders { get; set; }
+        public virtual DbSet<LabelBody> LabelBodies { get; set; }
 
         public virtual DbSet<HttpLogger> HttpLoggers { get; set; }
         public virtual DbSet<Logger> Loggers { get; set; }
@@ -61,6 +63,24 @@ namespace Wms.Integration.DataAccess.Concrete.Contexts
                  .HasMaxLength(250);
             });
 
+            modelBuilder.Entity<LabelHeader>(entity =>
+            {
+                entity.ToTable("LabelHeader");
+                entity.Property(s => s.Id)
+               .IsRequired()
+               .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+
+                entity.HasKey(s => s.Id);
+            });
+            modelBuilder.Entity<LabelBody>(entity =>
+            {
+                entity.ToTable("LabelBody");
+                entity.Property(s => s.Id)
+               .IsRequired()
+               .HasColumnType(SqlDbType.UniqueIdentifier.ToString());
+
+                entity.HasKey(s => s.Id);
+            });
             modelBuilder.Entity<HttpLogger>(entity =>
             {
                 entity.ToTable("HttpLogger");

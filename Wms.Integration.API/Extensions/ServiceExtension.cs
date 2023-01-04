@@ -15,6 +15,8 @@ namespace Wms.Integration.API.Extensions
             builder.AddScoped<ITokenHelper, JwtHelper>();
             #endregion
             #region Scoped Service - Manager  
+
+            builder.AddScoped<IShipmentService, ShipmentManager>();
             builder.AddScoped<IAddressItemService, AddressItemManager>();
             builder.AddScoped<IArpService, ArpManager>();
             builder.AddScoped<IAuthService, AuthManager>();
@@ -105,7 +107,8 @@ namespace Wms.Integration.API.Extensions
 
             #endregion
             #region Dal - EfDal
-
+            builder.AddScoped<ILabelHeaderDal,EfLabelHeaderDal>();
+            builder.AddScoped<ILabelBodyDal, EfLabelBodyDal>();
             builder.AddScoped<ILoggerDal, EfLoggerDal>();
             builder.AddScoped<IHttpLoggerDal, EfHttpLoggerDal>();
             builder.AddScoped<IDecompositionDal, EfDecompositionDal>();

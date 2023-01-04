@@ -82,3 +82,17 @@ C:\GitHup\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\refint\Wms.Integra
 C:\GitHup\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.pdb
 C:\GitHup\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.genruntimeconfig.cache
 C:\GitHup\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\ref\Wms.Integration.Core.dll
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.deps.json
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.runtimeconfig.json
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\bin\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.csproj.AssemblyReference.cache
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.AssemblyInfoInputs.cache
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.AssemblyInfo.cs
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.csproj.CoreCompileInputs.cache
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.dll
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\refint\Wms.Integration.Core.dll
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.pdb
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\Wms.Integration.Core.genruntimeconfig.cache
+C:\Users\netli\Source\Repos\Wms.Cargoline\Wms.Integration.Core\obj\Debug\net6.0\ref\Wms.Integration.Core.dll

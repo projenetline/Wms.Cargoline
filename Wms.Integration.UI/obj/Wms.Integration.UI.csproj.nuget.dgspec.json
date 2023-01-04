@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj": {}
+    "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj": {}
   },
   "projects": {
-    "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
+    "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
+        "projectUniqueName": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
         "projectName": "Wms.Integration.Core",
-        "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Core\\obj\\",
+        "projectPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj",
+        "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -87,25 +86,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
+    "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
         "projectName": "Wms.Integration.Entities",
-        "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\obj\\",
+        "projectPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj",
+        "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -121,8 +119,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
-                "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj"
+              "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj": {
+                "projectPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Core\\Wms.Integration.Core.csproj"
               }
             }
           }
@@ -152,25 +150,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj": {
+    "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
+        "projectUniqueName": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
         "projectName": "Wms.Integration.UI",
-        "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.UI\\obj\\",
+        "projectPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.UI\\Wms.Integration.UI.csproj",
+        "packagesPath": "C:\\Users\\netli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\netli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -186,8 +183,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
-                "projectPath": "C:\\GitHup\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj"
+              "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj": {
+                "projectPath": "C:\\Users\\netli\\source\\repos\\Wms.Cargoline\\Wms.Integration.Entities\\Wms.Integration.Entities.csproj"
               }
             }
           }
@@ -277,7 +274,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

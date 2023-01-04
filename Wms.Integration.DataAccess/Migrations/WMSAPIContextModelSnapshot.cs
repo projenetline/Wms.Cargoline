@@ -130,6 +130,75 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.ToTable("HttpLogger", (string)null);
                 });
 
+            modelBuilder.Entity("Wms.Integration.Entities.Concrete.LabelBody", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("UniqueIdentifier");
+
+                    b.Property<Guid>("LabelHeaderId")
+                        .HasColumnType("UniqueIdentifier");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LabelHeaderId");
+
+                    b.ToTable("LabelBody", (string)null);
+                });
+
+            modelBuilder.Entity("Wms.Integration.Entities.Concrete.LabelHeader", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("UniqueIdentifier");
+
+                    b.Property<string>("Address1")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address2")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("BoxCount")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClDefintion")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Date")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Desi")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InvoiceCount")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LabelCount")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("OrderNr")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PaletNr")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Town")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Transporter")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("LabelHeader", (string)null);
+                });
+
             modelBuilder.Entity("Wms.Integration.Entities.Concrete.Logger", b =>
                 {
                     b.Property<Guid>("Id")
@@ -183,6 +252,17 @@ namespace Wms.Integration.DataAccess.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("Wms.Integration.Entities.Concrete.LabelBody", b =>
+                {
+                    b.HasOne("Wms.Integration.Entities.Concrete.LabelHeader", "LabelHeader")
+                        .WithMany("labelBodies")
+                        .HasForeignKey("LabelHeaderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("LabelHeader");
+                });
+
             modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.OperationClaim", b =>
                 {
                     b.Navigation("UserOperationClaims");
@@ -191,6 +271,11 @@ namespace Wms.Integration.DataAccess.Migrations
             modelBuilder.Entity("Wms.Integration.Core.Entities.Concrete.User", b =>
                 {
                     b.Navigation("OperationClaims");
+                });
+
+            modelBuilder.Entity("Wms.Integration.Entities.Concrete.LabelHeader", b =>
+                {
+                    b.Navigation("labelBodies");
                 });
 #pragma warning restore 612, 618
         }

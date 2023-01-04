@@ -1,14 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using Wms.Integration.Entities.Concrete;
+﻿using DinkToPdf.Contracts;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Wms.Integration.Entities.Dtos.Shipments;
 using Wms.Integration.UI.Helpers;
 using Wms.Integration.WebUI.Models;
-using System.ComponentModel;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Wms.Integration.WebUI.PrintHelper;
-using DinkToPdf.Contracts;
-using Wms.Integration.Core.DataAccess.Utilities.Results;
 
 namespace Wms.Integration.WebUI.Controllers
 {

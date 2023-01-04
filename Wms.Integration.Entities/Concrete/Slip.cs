@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class Slip:IBaseEntity
+    public partial class Slip: IBaseEntity
     {
         public Slip()
         {
@@ -56,6 +58,8 @@ namespace Wms.Integration.Entities.Concrete
         public int CreatedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public int? ModifiedBy { get; set; }
+        public int? CargoFirmId { get; set; }
+        public string CargoTrackingNumber { get; set; }
 
         public virtual Arp Arp { get; set; }
         public virtual SysCustomSlipType CustomSlipType { get; set; }

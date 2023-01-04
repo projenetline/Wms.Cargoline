@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class ItemTotalsReportView:IBaseEntity
+    public partial class ItemTotalsReportView: IBaseEntity
     {
         public int WarehouseId { get; set; }
         public string DepoKodu { get; set; }

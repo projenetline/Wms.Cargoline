@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class HistoryDetail:IBaseEntity
+    public partial class HistoryDetail: IBaseEntity
     {
         public int Id { get; set; }
         public int HistoryId { get; set; }

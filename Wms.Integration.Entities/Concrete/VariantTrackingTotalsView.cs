@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class VariantTrackingTotalsView:IBaseEntity
+    public partial class VariantTrackingTotalsView: IBaseEntity
     {
         public int ItemId { get; set; }
         public int? VariantId { get; set; }

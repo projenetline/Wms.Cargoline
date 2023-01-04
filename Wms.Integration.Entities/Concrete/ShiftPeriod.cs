@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class ShiftPeriod:IBaseEntity
+    public partial class ShiftPeriod: IBaseEntity
     {
         public int Id { get; set; }
         public int ShiftId { get; set; }

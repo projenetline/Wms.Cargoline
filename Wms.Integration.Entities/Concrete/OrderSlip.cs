@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class OrderSlip:IBaseEntity
+    public partial class OrderSlip: IBaseEntity
     {
         public OrderSlip()
         {
@@ -11,21 +13,22 @@ namespace Wms.Integration.Entities.Concrete
             Slips = new HashSet<Slip>();
             WorkOrders = new HashSet<WorkOrder>();
         }
+
         public int Id { get; set; }
         public short SlipType { get; set; }
         public string SlipNumber { get; set; }
         public DateTime SlipDate { get; set; }
-        public int? ArpId { get; set; }//Carileri logodan alıcak
-        public int? DeliveryArpId { get; set; }//NULL
-        public int? ShipmentAddressId { get; set; }//NULL
-        public int? WarehouseId { get; set; }//Depo numarası 1
-        public int? Warehouse2Id { get; set; }//NULL
-        public string DocumentNumber { get; set; }//Döküman Numarası
-        public string CustomCode { get; set; }//""=istencek
-        public string Description1 { get; set; }//""=istencek
-        public string Description2 { get; set; }//""=istencek
-        public string Description3 { get; set; }//""=istencek
-        public string Description4 { get; set; }//""=istencek
+        public int? ArpId { get; set; }
+        public int? DeliveryArpId { get; set; }
+        public int? ShipmentAddressId { get; set; }
+        public int? WarehouseId { get; set; }
+        public int? Warehouse2Id { get; set; }
+        public string DocumentNumber { get; set; }
+        public string CustomCode { get; set; }
+        public string Description1 { get; set; }
+        public string Description2 { get; set; }
+        public string Description3 { get; set; }
+        public string Description4 { get; set; }
         public int? DepartmentId { get; set; }
         public int? DivisionId { get; set; }
         public int? FactoryId { get; set; }
@@ -53,6 +56,7 @@ namespace Wms.Integration.Entities.Concrete
         public int? CreatedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public int? ModifiedBy { get; set; }
+
         public virtual Arp Arp { get; set; }
         public virtual Carrier Carrier { get; set; }
         public virtual Arp DeliveryArp { get; set; }

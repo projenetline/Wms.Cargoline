@@ -89,8 +89,10 @@ namespace Wms.Integration.Business.Concrete
             {
                 SysErpFirm erpfirm=await  sysErpFirmDal.GetAsync(s=>s.ErpFirmNumber==int.Parse(dto.FirmNr));
                // IList<OrderSlip> orderSlip=await orderSlipDal.GetListAsync(s =>dto.StateId2==0? s.StateId == dto.StateId : s.StateId == dto.StateId,s=>s.SlipNumber,false);
-                IList<int> integration=(await sysErpIntegrationDal.GetListAsync(s => s.RecordType == 153 && s.ErpFirmId==erpfirm.Id,s=>s.RecordId,false)).Select(s=>s.Id).ToList();
-                return new SuccessDataResult<IList<OrderSlip>>(await orderSlipDal.GetListAsync(s => dto.StateId2 == 0 ? s.StateId == dto.StateId && integration.Contains(s.Id): s.StateId == dto.StateId && s.StateId==dto.StateId2 && integration.Contains(s.Id), s => s.SlipNumber, false,s=>s.Arp), CustomJObject.Instance.General.Get);
+                IList<int> integration=(await sysErpIntegrationDal.GetListAsync(s => s.RecordType == 153 && s.ErpFirmId==erpfirm.Id,s=>s.RecordId,false)).Select(s=>s.RecordId).ToList();
+
+                IList<OrderSlip> orderSlipsList=await orderSlipDal.GetListAsync(s=> integration.Contains(s.Id) && (s.StateId==dto.StateId ||s.StateId==dto.StateId2), s => s.Id,false,s=>s.Arp);
+                return new SuccessDataResult<IList<OrderSlip>>(orderSlipsList, CustomJObject.Instance.General.Get);
             }
             catch (Exception ex)
             {

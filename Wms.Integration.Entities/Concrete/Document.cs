@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class Document:IBaseEntity
+    public partial class Document: IBaseEntity
     {
         public int Id { get; set; }
         public string Description { get; set; }

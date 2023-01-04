@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class Carrier:IBaseEntity
+    public partial class Carrier: IBaseEntity
     {
         public Carrier()
         {
@@ -26,6 +28,5 @@ namespace Wms.Integration.Entities.Concrete
         public int? ModifiedBy { get; set; }
 
         public virtual ICollection<OrderSlip> OrderSlips { get; set; }
-        public virtual ICollection<CTag> CTags { get; set; }
     }
 }

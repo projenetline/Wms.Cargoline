@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class SysPrinter:IBaseEntity
+    public partial class SysPrinter: IBaseEntity
     {
         public SysPrinter()
         {
@@ -21,6 +23,5 @@ namespace Wms.Integration.Entities.Concrete
         public int? ModifiedBy { get; set; }
 
         public virtual ICollection<SysUser> SysUsers { get; set; }
-        public virtual ICollection<CTag> CTags { get; set; }
     }
 }

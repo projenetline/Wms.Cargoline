@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class SysAuthCode:IBaseEntity
+    public partial class SysAuthCode: IBaseEntity
     {
         public int Id { get; set; }
         public int? RoleId { get; set; }

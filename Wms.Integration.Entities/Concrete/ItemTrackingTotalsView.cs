@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class ItemTrackingTotalsView:IBaseEntity
+    public partial class ItemTrackingTotalsView: IBaseEntity
     {
         public int ItemId { get; set; }
         public int WarehouseId { get; set; }

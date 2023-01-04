@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class Item:IBaseEntity
+    public partial class Item: IBaseEntity
     {
         public Item()
         {
@@ -70,18 +70,18 @@ namespace Wms.Integration.Entities.Concrete
         public decimal? InputOverageLimit { get; set; }
         public short OutputOverageType { get; set; }
         public decimal? OutputOverageLimit { get; set; }
-        public string AuthCode { get; set; }
-        public short Active { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public int CreatedBy { get; set; }
-        public DateTime? ModifiedDate { get; set; }
-        public int? ModifiedBy { get; set; }
         public short CanDeduct { get; set; }
         public string DeductCode { get; set; }
         public short SaleDeductionPart1 { get; set; }
         public short SaleDeductionPart2 { get; set; }
         public short PurchDeductionPart1 { get; set; }
         public short PurchDeductionPart2 { get; set; }
+        public string AuthCode { get; set; }
+        public short Active { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public int CreatedBy { get; set; }
+        public DateTime? ModifiedDate { get; set; }
+        public int? ModifiedBy { get; set; }
 
         public virtual Item ParentItem { get; set; }
         public virtual ICollection<AddressItem> AddressItems { get; set; }

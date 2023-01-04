@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class OrderSlipLine:IBaseEntity
+    public partial class OrderSlipLine: IBaseEntity
     {
         public OrderSlipLine()
         {
@@ -10,7 +12,6 @@ namespace Wms.Integration.Entities.Concrete
             SlipLines = new HashSet<SlipLine>();
             TransactionDetails = new HashSet<TransactionDetail>();
             WorkOrderLines = new HashSet<WorkOrderLine>();
-            DecompositionLines= new HashSet<DecompositionLine>();
         }
 
         public int Id { get; set; }
@@ -51,6 +52,7 @@ namespace Wms.Integration.Entities.Concrete
         public int CreatedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public int? ModifiedBy { get; set; }
+
         public virtual Arp Arp { get; set; }
         public virtual SysUser AssignedToNavigation { get; set; }
         public virtual SysDepartment Department { get; set; }
@@ -62,7 +64,6 @@ namespace Wms.Integration.Entities.Concrete
         public virtual Item Variant { get; set; }
         public virtual SysWarehouse Warehouse { get; set; }
         public virtual SysWarehouse Warehouse2 { get; set; }
-        public virtual ICollection<DecompositionLine> DecompositionLines { get; set; }
         public virtual ICollection<ReservationSlipLine> ReservationSlipLines { get; set; }
         public virtual ICollection<SlipLine> SlipLines { get; set; }
         public virtual ICollection<TransactionDetail> TransactionDetails { get; set; }

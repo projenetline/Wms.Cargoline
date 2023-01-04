@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class LoginHistory:IBaseEntity
+    public partial class LoginHistory: IBaseEntity
     {
         public int Id { get; set; }
         public string UserName { get; set; }

@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class SlipLine:IBaseEntity
+    public partial class SlipLine: IBaseEntity
     {
         public SlipLine()
         {
@@ -76,7 +78,6 @@ namespace Wms.Integration.Entities.Concrete
         public virtual SysWarehouse Warehouse { get; set; }
         public virtual SysWarehouse Warehouse2 { get; set; }
         public virtual WorkOrderLine WorkOrderLine { get; set; }
-       // public virtual ICollection<DecompositionLine> DecompositionLines { get; set; }
         public virtual ICollection<TransactionDetail> TransactionDetails { get; set; }
     }
 }

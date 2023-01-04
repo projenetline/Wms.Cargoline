@@ -28,7 +28,7 @@ namespace Wms.Integration.API.Controllers
         [HttpGet("GetShipmentList")]
         public async Task<List<ShipingListModel>> GetShipmentList(string FirmNr)
         {
-            IDataResult<IList<OrderSlip>> dataResult= await _orderSlipService.GetListAsync(new OrderSlipListParameterDto{StateId=23,StateId2=25,FirmNr=FirmNr });
+            IDataResult<IList<OrderSlip>> dataResult= await _orderSlipService.GetListAsync(new OrderSlipListParameterDto{StateId=25,StateId2=28,FirmNr=FirmNr });
             if (dataResult.Success)
             {
                 return dataResult.Data.Select((s, Index) => new ShipingListModel

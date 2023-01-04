@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class ProductionOrderLine:IBaseEntity
+    public partial class ProductionOrderLine: IBaseEntity
     {
         public ProductionOrderLine()
         {

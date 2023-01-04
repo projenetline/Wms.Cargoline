@@ -4,7 +4,7 @@ using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class ErpinvTotal:IBaseEntity
+    public partial class ErpinvTotal: IBaseEntity
     {
         public int Id { get; set; }
         public int? Stockref { get; set; }

@@ -1,8 +1,10 @@
-﻿using Wms.Integration.Core.Entities.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using Wms.Integration.Core.Entities.Abstract;
 
 namespace Wms.Integration.Entities.Concrete
 {
-    public partial class SysErpIntegration:IBaseEntity
+    public partial class SysErpIntegration: IBaseEntity
     {
         public int Id { get; set; }
         public int ErpId { get; set; }
@@ -25,6 +27,8 @@ namespace Wms.Integration.Entities.Concrete
         public int CreatedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
         public int? ModifiedBy { get; set; }
+        public int? ErpEinvoice { get; set; }
+        public int? ErpEdispatch { get; set; }
 
         public virtual SysErp Erp { get; set; }
         public virtual SysErpFirm ErpFirm { get; set; }
